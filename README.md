@@ -24,5 +24,7 @@
 
 打开 [实验 01](experiments/01_digits_linear/README.md)，按其步骤操作。
 上传与克隆后恢复请看 [GitHub 留档指南](docs/github_archive.md)。
-本仓库没有绑定 GitHub 远程仓库；上传前检查 `.gitignore`，不提交工具安装包、
+仓库已归档至 [GitHub](https://github.com/ZhuJian-fdu/fpga_ai_deployment)。
+2026-11-25 已从远程重新克隆并通过模型恢复与四项仿真，见 [远程归档检查](experiments/01_digits_linear/reports/github_validation.md)。
+后续提交前检查 `.gitignore`，不提交工具安装包、
 完整第三方资料、私有文件或大体积生成物。第三方板卡资料优先记录官方链接。

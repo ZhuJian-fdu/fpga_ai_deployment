@@ -11,7 +11,9 @@
 
 ## 首次提交和上传
 
-当前仓库已初始化为 `main`，尚无提交或远程地址。以下命令在仓库根目录手动执行：
+本仓库已完成首次提交并上传至 [GitHub](https://github.com/ZhuJian-fdu/fpga_ai_deployment)，分支为 `main`。
+以下保留首次创建其他仓库时的操作参考；本仓库后续更新请使用下一节，不要重复添加 `origin`。
+命令在仓库根目录手动执行：
 
 ```powershell
 git status --short
@@ -35,8 +37,23 @@ git push -u origin main
 ```
 
 如果已经配置过 `origin`，先用 `git remote -v` 检查，不要重复添加或使用强制推送。
-这份文档不表示已经执行提交、创建远程仓库或上传。
 许可证尚未选择；需要向他人明确授予复用权限时，再单独决定并添加 LICENSE。
+
+## 已上传仓库的后续更新
+
+每次整理好新代码或实验记录后，检查改动，再提交并推送：
+
+```powershell
+git status --short
+git diff
+git add .
+git diff --cached --check
+git diff --cached --stat
+git commit -m "Describe the changes in this update"
+git push
+```
+
+如果推送提示远程有新提交，先查看远程变化并合并，不使用强制推送覆盖历史。
 
 ## 在新的本地克隆中恢复
 
