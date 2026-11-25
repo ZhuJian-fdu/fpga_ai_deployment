@@ -1,0 +1,8 @@
+{
+  "port": "COM11",
+  "baud": 115200,
+  "format": "8N1",
+  "bytes_checked": 1296,
+  "result": "PASS",
+  "scope": "UART echo only; confirm LED2 is off"
+}

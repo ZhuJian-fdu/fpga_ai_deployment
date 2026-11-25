@@ -1,0 +1,18 @@
+{
+  "dataset": "sklearn load_digits (8x8), not MNIST",
+  "numpy_version": "1.26.4",
+  "sklearn_version": "1.5.2",
+  "split_seed": 42,
+  "train_samples": 1347,
+  "test_samples": 450,
+  "float_accuracy": 0.9622222222222222,
+  "integer_accuracy": 0.9622222222222222,
+  "float_integer_agreement": 1.0,
+  "weight_scale": 0.0013129939203262032,
+  "score_abs_bound": 27567,
+  "weight_bytes": 640,
+  "bias_bytes": 40,
+  "rtl_test_vectors": 454,
+  "weights_sha256": "0b08c73a09ac85d14a6e5ee33b0d98daccb87dd6476684dc30850bd3520ac00b",
+  "biases_sha256": "6adb6998366807226210e73d647d3de382268899cc736cd882aecc89025460b8"
+}

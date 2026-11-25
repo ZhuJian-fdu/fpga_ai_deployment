@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "tool": "Vivado 2023.2",
+  "part": "xc7a35tfgg484-2",
+  "physical_ai_validation": "passed_450_images_4500_exact_scores; see board_inference_summary.json",
+  "sha256": {
+    "build/model/model.npz": "f732d15b891bc8cf143f20a913c1ed1ac7bfa30441bca420d46121a390148aaa",
+    "build/model/weights.mem": "0b08c73a09ac85d14a6e5ee33b0d98daccb87dd6476684dc30850bd3520ac00b",
+    "build/model/biases.mem": "6adb6998366807226210e73d647d3de382268899cc736cd882aecc89025460b8",
+    "build/ai/acx720_v3_ai.bit": "2335ac0327f51d287487a259fae43dcf3ce3a8cf5292d743172db2eac1378698",
+    "build/ai/timing_summary.rpt": "514be2cc7058fe53801da94b36b4661073b4516a3325c7524358d1eaa90cd886",
+    "build/ai/utilization.rpt": "e615db26fd1f1bf9fb7dfce190d076190339c411cdc3bef873bec567bfc9d342",
+    "build/ai/drc.rpt": "110a21734f90bf5edcf174dc3149e570f900b3282ca1a646ec3af6763882ee0d",
+    "build/ai/cdc.rpt": "513b3f29602eeac8782d63b91fa733da3a8131d83dd63853acc36c62103e53b4",
+    "board/acx720_v3_ai_top.v": "5e64c8c262ceda230097b8eab43c7876eaba3df1da71d4260bb65e99a6124018",
+    "board/acx720_v3_ai.xdc": "f75fbd0c253681456d6f525899c089f8d783dc11f8d1fdab56866d9378ab0e20",
+    "rtl/heartbeat.v": "62153e876557cc3db85d5469b948105a18aefa8df14e5d3ede1add3f9ca06935",
+    "rtl/uart_rx.v": "19773301f3ed6b8957055558a73bc0c58f80c5d1a49186b02e78c9b3e15ccfb1",
+    "rtl/uart_tx.v": "4d7d7b8791d6c255e9029c68b6692e36a685e6ad892485f426e631cf32ca2bbf",
+    "rtl/digit_classifier.sv": "e558d211055d45a4abdd619b0d9c4e4ca74010eb5a4856afc8468dec16b81d5e",
+    "rtl/digit_protocol.sv": "85a3c7676c0a8515521eaf7a3595651944855e925d95222494e8f9171b6d60de",
+    "rtl/digit_uart.sv": "2c1e0480458fe7cd587c95b133fb5ba9ef0766e83a9813bf56b45c7a3e2d1dd4",
+    "scripts/create_ai_project.tcl": "66e50b0da6dbde25975ef4c940fc42a0e803e82bcee8f095f542583abfa362e1",
+    "scripts/build_ai.tcl": "4843f7a1cb345d81df5beff3db4724efb6ca0f0f75796f9700e77a12b1bfb396"
+  }
+}

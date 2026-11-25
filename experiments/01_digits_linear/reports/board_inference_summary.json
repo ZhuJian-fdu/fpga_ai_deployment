@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "port": "COM11",
+  "baudrate": 115200,
+  "all_scores_match": true,
+  "build_manifest_matches_current_files": true,
+  "programming_confirmation": "User confirmed AI bitstream downloaded; device configuration was not read back",
+  "ai_led_observation": "not yet reported",
+  "runs": {
+    "10": {
+      "images": 10,
+      "score_comparisons": 100,
+      "correct": 9,
+      "accuracy": 0.9,
+      "roundtrip_ms_median": 15.499999999974534,
+      "report_sha256": "72a345abcc75201f31af9fadb63192719edb4ead163d5446de8910c6062a9bfa"
+    },
+    "450": {
+      "images": 450,
+      "score_comparisons": 4500,
+      "correct": 433,
+      "accuracy": 0.9622222222222222,
+      "roundtrip_ms_median": 14.99999999987267,
+      "report_sha256": "6fdd9b2d251719a7b58fd0c7ba9257a24b76abd018065b48984c3b2a68818ae1"
+    }
+  }
+}

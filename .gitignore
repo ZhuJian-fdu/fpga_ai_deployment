@@ -1,0 +1,41 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Reproducible outputs and downloaded datasets
+**/build/
+**/data/raw/
+**/artifacts/
+# Vendor packages stay local; commit source links and our own board adaptation.
+**/board/vendor/
+
+# Vivado generated files (keep RTL, XDC and Tcl source)
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.vcd
+*.vvp
+*.bit
+*.bin
+*.dcp
+*.xpr
+*.cache/
+*.runs/
+*.sim/
+*.gen/
+*.hw/
+ip_user_files/
+
+# Local machine settings and credentials
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.ps1
+Thumbs.db
+Desktop.ini
