@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-25",
+  "torch": "2.7.1+cpu",
+  "timm": "1.0.15",
+  "calibration_samples": 300,
+  "development_samples": 1000,
+  "reserved_holdout_inference": false,
+  "calibration_sites": 106,
+  "fp32_task_masked_rmse": 0.10265445121822812,
+  "adapter_max_abs_vs_fp32": 0.0,
+  "configurations": {
+    "W8_FP32": {
+      "weight_bits": 8,
+      "activation_bits": null,
+      "range_margin": 1.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.10259902123418575,
+      "task_rmse_change_pct": -0.05399666880935294,
+      "quantization_masked_rmse_vs_fp32": 0.0037768521754188216,
+      "quantization_masked_mae_vs_fp32": 0.0017172692956720801,
+      "quantization_masked_max_abs_vs_fp32": 0.1759345754981041,
+      "quantization_all42_max_abs_vs_fp32": 0.1759345754981041,
+      "per_sample_quant_rmse_p95": 0.007172543304880154,
+      "activation_elements": 0,
+      "activation_clipped": 0,
+      "activation_clipping_fraction": 0,
+      "largest_required_signed_accumulator_bits": null,
+      "weight_payload_bytes": 21821604,
+      "elapsed_seconds": 7.507891700000073
+    },
+    "W8A8": {
+      "weight_bits": 8,
+      "activation_bits": 8,
+      "range_margin": 1.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.10480515556651991,
+      "task_rmse_change_pct": 2.0950911750720946,
+      "quantization_masked_rmse_vs_fp32": 0.04415831834523461,
+      "quantization_masked_mae_vs_fp32": 0.020070432911409277,
+      "quantization_masked_max_abs_vs_fp32": 0.8542393445968628,
+      "quantization_all42_max_abs_vs_fp32": 0.8542393445968628,
+      "per_sample_quant_rmse_p95": 0.09752546410755977,
+      "activation_elements": 2575404000,
+      "activation_clipped": 1306,
+      "activation_clipping_fraction": 5.071049047062131e-07,
+      "largest_required_signed_accumulator_bits": 26,
+      "weight_payload_bytes": 21821604,
+      "elapsed_seconds": 12.559846099999959
+    },
+    "W8A12": {
+      "weight_bits": 8,
+      "activation_bits": 12,
+      "range_margin": 1.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.1026381549897125,
+      "task_rmse_change_pct": -0.015874838667229163,
+      "quantization_masked_rmse_vs_fp32": 0.004107439368777134,
+      "quantization_masked_mae_vs_fp32": 0.0018604665869992086,
+      "quantization_masked_max_abs_vs_fp32": 0.23938118666410446,
+      "quantization_all42_max_abs_vs_fp32": 0.23938118666410446,
+      "per_sample_quant_rmse_p95": 0.0076801279624758466,
+      "activation_elements": 2575404000,
+      "activation_clipped": 1397,
+      "activation_clipping_fraction": 5.42439166825865e-07,
+      "largest_required_signed_accumulator_bits": 30,
+      "weight_payload_bytes": 21821604,
+      "elapsed_seconds": 12.63114059999998
+    },
+    "W8A16": {
+      "weight_bits": 8,
+      "activation_bits": 16,
+      "range_margin": 1.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.1025913421149911,
+      "task_rmse_change_pct": -0.06147722041088821,
+      "quantization_masked_rmse_vs_fp32": 0.0037971202029585824,
+      "quantization_masked_mae_vs_fp32": 0.0017254151169200224,
+      "quantization_masked_max_abs_vs_fp32": 0.1757545992732048,
+      "quantization_all42_max_abs_vs_fp32": 0.1757545992732048,
+      "per_sample_quant_rmse_p95": 0.007216177867666413,
+      "activation_elements": 2575404000,
+      "activation_clipped": 1393,
+      "activation_clipping_fraction": 5.408860124469792e-07,
+      "largest_required_signed_accumulator_bits": 34,
+      "weight_payload_bytes": 21821604,
+      "elapsed_seconds": 12.499158099999931
+    },
+    "W16A16": {
+      "weight_bits": 16,
+      "activation_bits": 16,
+      "range_margin": 1.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.10264491173106642,
+      "task_rmse_change_pct": -0.009292813948635903,
+      "quantization_masked_rmse_vs_fp32": 0.00032091062677636463,
+      "quantization_masked_mae_vs_fp32": 4.38706402208668e-05,
+      "quantization_masked_max_abs_vs_fp32": 0.049280911684036255,
+      "quantization_all42_max_abs_vs_fp32": 0.049280911684036255,
+      "per_sample_quant_rmse_p95": 0.00018986857078544567,
+      "activation_elements": 2575404000,
+      "activation_clipped": 1418,
+      "activation_clipping_fraction": 5.505932273150154e-07,
+      "largest_required_signed_accumulator_bits": 42,
+      "weight_payload_bytes": 43643208,
+      "elapsed_seconds": 12.716179499999726
+    },
+    "W16A16_M125": {
+      "weight_bits": 16,
+      "activation_bits": 16,
+      "range_margin": 1.25,
+      "samples": 1000,
+      "task_masked_rmse": 0.10265767266366066,
+      "task_rmse_change_pct": 0.0031381449068224043,
+      "quantization_masked_rmse_vs_fp32": 8.599169422934722e-05,
+      "quantization_masked_mae_vs_fp32": 3.606394068069326e-05,
+      "quantization_masked_max_abs_vs_fp32": 0.003280084580183029,
+      "quantization_all42_max_abs_vs_fp32": 0.003280084580183029,
+      "per_sample_quant_rmse_p95": 0.0001800992663523584,
+      "activation_elements": 2575404000,
+      "activation_clipped": 1,
+      "activation_clipping_fraction": 3.882885947214495e-10,
+      "largest_required_signed_accumulator_bits": 42,
+      "weight_payload_bytes": 43643208,
+      "elapsed_seconds": 12.615957399999843
+    },
+    "W16A16_M200": {
+      "weight_bits": 16,
+      "activation_bits": 16,
+      "range_margin": 2.0,
+      "samples": 1000,
+      "task_masked_rmse": 0.10265425695947629,
+      "task_rmse_change_pct": -0.00018923558552375042,
+      "quantization_masked_rmse_vs_fp32": 0.0001409716254349762,
+      "quantization_masked_mae_vs_fp32": 5.737413858579925e-05,
+      "quantization_masked_max_abs_vs_fp32": 0.00727533595636487,
+      "quantization_all42_max_abs_vs_fp32": 0.00727533595636487,
+      "per_sample_quant_rmse_p95": 0.00027994926001867053,
+      "activation_elements": 2575404000,
+      "activation_clipped": 0,
+      "activation_clipping_fraction": 0.0,
+      "largest_required_signed_accumulator_bits": 42,
+      "weight_payload_bytes": 43643208,
+      "elapsed_seconds": 12.656135100000029
+    }
+  },
+  "export": {
+    "config": "W16A16_M125",
+    "directory": "build\\quantization\\W16A16_M125",
+    "files": {
+      "format.json": {
+        "bytes": 46005,
+        "sha256": "5ceddcb8c29c5483f3434205d5752178687f8a8381963d0933db98b304449aab"
+      },
+      "quantized_tensors.npz": {
+        "bytes": 43758501,
+        "sha256": "a01ab3533c3152a4342719a7385fb018d148c15da2617ea3fce0ebad70bf62cb"
+      },
+      "remaining_state.npz": {
+        "bytes": 156597,
+        "sha256": "acb604d8196acae188f58d92b2edfc53cb70b69ffa3dedc81d86bc0dd086a912"
+      },
+      "weights.bin": {
+        "bytes": 43643208,
+        "sha256": "3d71c7ca48f9cf9f69adde7bedf294373b17376a6b1d1fe9a03ce7dae7a5c728"
+      }
+    }
+  },
+  "export_roundtrip": {
+    "bitwise_equal_fp32_predictions": true,
+    "max_abs_difference": 0.0
+  },
+  "dataset_manifest_sha256": "5a623423a7a025f2270db421b614c9e3588fd011c2e623de364ed417c6cbd2a8",
+  "checkpoint_sha256": "8c57b6f5b2bb93243c94d27af9a874fa800cc1c9237326ffaf835f9d610a6f42",
+  "user_accuracy_threshold": null,
+  "candidate_selection": "min development max output deviation among W16A16 margin 1, 1.25, 2; not final acceptance",
+  "scope": "Software PTQ simulation and integer weight export; nonlinearities and accumulation still float; no FPGA inference",
+  "script_sha256": {
+    "quantization_core.py": "91535bc6c0aaea6bf98bde33ed9881be0b196d108c492cd9bedab68b07c20c2c",
+    "run_quantization.py": "877e41ea2f22c6ba0fd30e363fb128fd480aaa58e001d5691a13f4d076aab30a"
+  }
+}

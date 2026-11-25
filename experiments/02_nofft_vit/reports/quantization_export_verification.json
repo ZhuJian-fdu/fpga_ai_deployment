@@ -1,0 +1,314 @@
+{
+  "date": "2026-11-25",
+  "config": "W16A16_M125",
+  "layers": 58,
+  "integer_weight_elements": 21821604,
+  "weight_bytes": 43643208,
+  "weight_mib": 41.62140655517578,
+  "remaining_state_tensors": 63,
+  "remaining_state_raw_bytes": 155364,
+  "largest_conv_linear_signed_accumulator_bits": 42,
+  "attention_bounds": {
+    "qk_terms": 64,
+    "qk_abs_bound": 68715282496,
+    "qk_signed_bits": 37,
+    "pv_terms": 50,
+    "pv_abs_bound": 107369267250,
+    "pv_signed_bits": 38
+  },
+  "binary_npz_exact_match": true,
+  "all_export_hashes_match": true,
+  "layer_bounds": {
+    "spatial_module.ca.conv1": {
+      "actual_weight_extreme_abs_bound": 4209619778,
+      "conservative_abs_bound": 6023894332,
+      "signed_bits": 34
+    },
+    "spatial_module.ca.conv_h": {
+      "actual_weight_extreme_abs_bound": 3932046871,
+      "conservative_abs_bound": 8650724240,
+      "signed_bits": 35
+    },
+    "spatial_module.ca.conv_w": {
+      "actual_weight_extreme_abs_bound": 4333580718,
+      "conservative_abs_bound": 8652140250,
+      "signed_bits": 35
+    },
+    "spatial_module.cbam.channel_attention.mlp.0": {
+      "actual_weight_extreme_abs_bound": 3432310483,
+      "conservative_abs_bound": 5368381445,
+      "signed_bits": 34
+    },
+    "spatial_module.cbam.channel_attention.mlp.2": {
+      "actual_weight_extreme_abs_bound": 1073676289,
+      "conservative_abs_bound": 1073676289,
+      "signed_bits": 31
+    },
+    "spatial_module.cbam.spatial_attention.conv": {
+      "actual_weight_extreme_abs_bound": 29072422449,
+      "conservative_abs_bound": 105220276322,
+      "signed_bits": 38
+    },
+    "backbone.patch_embed.proj": {
+      "actual_weight_extreme_abs_bound": 546765859618,
+      "conservative_abs_bound": 1374569556730,
+      "signed_bits": 42
+    },
+    "backbone.blocks.0.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 138156308492,
+      "conservative_abs_bound": 412378964927,
+      "signed_bits": 40
+    },
+    "backbone.blocks.0.attn.proj": {
+      "actual_weight_extreme_abs_bound": 141318515746,
+      "conservative_abs_bound": 412439427730,
+      "signed_bits": 40
+    },
+    "backbone.blocks.0.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 139857057739,
+      "conservative_abs_bound": 412330140356,
+      "signed_bits": 40
+    },
+    "backbone.blocks.0.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 467355714288,
+      "conservative_abs_bound": 1649229139050,
+      "signed_bits": 42
+    },
+    "backbone.blocks.1.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 142254361851,
+      "conservative_abs_bound": 412419007973,
+      "signed_bits": 40
+    },
+    "backbone.blocks.1.attn.proj": {
+      "actual_weight_extreme_abs_bound": 140165232659,
+      "conservative_abs_bound": 412370066241,
+      "signed_bits": 40
+    },
+    "backbone.blocks.1.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 142325634565,
+      "conservative_abs_bound": 412340181101,
+      "signed_bits": 40
+    },
+    "backbone.blocks.1.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 459622134254,
+      "conservative_abs_bound": 1649187326459,
+      "signed_bits": 42
+    },
+    "backbone.blocks.2.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 136589178329,
+      "conservative_abs_bound": 412418391524,
+      "signed_bits": 40
+    },
+    "backbone.blocks.2.attn.proj": {
+      "actual_weight_extreme_abs_bound": 135238250910,
+      "conservative_abs_bound": 412343370218,
+      "signed_bits": 40
+    },
+    "backbone.blocks.2.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 147199798353,
+      "conservative_abs_bound": 412339489472,
+      "signed_bits": 40
+    },
+    "backbone.blocks.2.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 453922962692,
+      "conservative_abs_bound": 1649213370675,
+      "signed_bits": 42
+    },
+    "backbone.blocks.3.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 141244665437,
+      "conservative_abs_bound": 412348188131,
+      "signed_bits": 40
+    },
+    "backbone.blocks.3.attn.proj": {
+      "actual_weight_extreme_abs_bound": 134322335416,
+      "conservative_abs_bound": 412460027257,
+      "signed_bits": 40
+    },
+    "backbone.blocks.3.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 143370170555,
+      "conservative_abs_bound": 412330561371,
+      "signed_bits": 40
+    },
+    "backbone.blocks.3.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 468648074049,
+      "conservative_abs_bound": 1649239157950,
+      "signed_bits": 42
+    },
+    "backbone.blocks.4.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 132448464497,
+      "conservative_abs_bound": 412335226131,
+      "signed_bits": 40
+    },
+    "backbone.blocks.4.attn.proj": {
+      "actual_weight_extreme_abs_bound": 134303796378,
+      "conservative_abs_bound": 412481406333,
+      "signed_bits": 40
+    },
+    "backbone.blocks.4.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 138427232157,
+      "conservative_abs_bound": 412323458223,
+      "signed_bits": 40
+    },
+    "backbone.blocks.4.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 461273474522,
+      "conservative_abs_bound": 1649228177697,
+      "signed_bits": 42
+    },
+    "backbone.blocks.5.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 142991580812,
+      "conservative_abs_bound": 412323197774,
+      "signed_bits": 40
+    },
+    "backbone.blocks.5.attn.proj": {
+      "actual_weight_extreme_abs_bound": 134359829863,
+      "conservative_abs_bound": 412549004146,
+      "signed_bits": 40
+    },
+    "backbone.blocks.5.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 136651045967,
+      "conservative_abs_bound": 412316684302,
+      "signed_bits": 40
+    },
+    "backbone.blocks.5.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 443138539576,
+      "conservative_abs_bound": 1649226324633,
+      "signed_bits": 42
+    },
+    "backbone.blocks.6.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 140725209454,
+      "conservative_abs_bound": 412318259301,
+      "signed_bits": 40
+    },
+    "backbone.blocks.6.attn.proj": {
+      "actual_weight_extreme_abs_bound": 129497441490,
+      "conservative_abs_bound": 412526638792,
+      "signed_bits": 40
+    },
+    "backbone.blocks.6.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 136592068786,
+      "conservative_abs_bound": 412314226650,
+      "signed_bits": 40
+    },
+    "backbone.blocks.6.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 458116590223,
+      "conservative_abs_bound": 1649246909076,
+      "signed_bits": 42
+    },
+    "backbone.blocks.7.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 135776977121,
+      "conservative_abs_bound": 412324447947,
+      "signed_bits": 40
+    },
+    "backbone.blocks.7.attn.proj": {
+      "actual_weight_extreme_abs_bound": 135337741817,
+      "conservative_abs_bound": 412544557353,
+      "signed_bits": 40
+    },
+    "backbone.blocks.7.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 139736897619,
+      "conservative_abs_bound": 412313807931,
+      "signed_bits": 40
+    },
+    "backbone.blocks.7.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 452410822637,
+      "conservative_abs_bound": 1649224822678,
+      "signed_bits": 42
+    },
+    "backbone.blocks.8.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 138396187862,
+      "conservative_abs_bound": 412349375572,
+      "signed_bits": 40
+    },
+    "backbone.blocks.8.attn.proj": {
+      "actual_weight_extreme_abs_bound": 138306157170,
+      "conservative_abs_bound": 412504098868,
+      "signed_bits": 40
+    },
+    "backbone.blocks.8.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 139408535386,
+      "conservative_abs_bound": 412312694965,
+      "signed_bits": 40
+    },
+    "backbone.blocks.8.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 470543477760,
+      "conservative_abs_bound": 1649263756754,
+      "signed_bits": 42
+    },
+    "backbone.blocks.9.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 135836469943,
+      "conservative_abs_bound": 412333844745,
+      "signed_bits": 40
+    },
+    "backbone.blocks.9.attn.proj": {
+      "actual_weight_extreme_abs_bound": 134970766333,
+      "conservative_abs_bound": 412568017339,
+      "signed_bits": 40
+    },
+    "backbone.blocks.9.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 135593204978,
+      "conservative_abs_bound": 412320821426,
+      "signed_bits": 40
+    },
+    "backbone.blocks.9.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 448772808356,
+      "conservative_abs_bound": 1649309302857,
+      "signed_bits": 42
+    },
+    "backbone.blocks.10.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 138493857121,
+      "conservative_abs_bound": 412328400576,
+      "signed_bits": 40
+    },
+    "backbone.blocks.10.attn.proj": {
+      "actual_weight_extreme_abs_bound": 135289501887,
+      "conservative_abs_bound": 412579894061,
+      "signed_bits": 40
+    },
+    "backbone.blocks.10.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 141874089656,
+      "conservative_abs_bound": 412319016926,
+      "signed_bits": 40
+    },
+    "backbone.blocks.10.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 521873502463,
+      "conservative_abs_bound": 1649354090172,
+      "signed_bits": 42
+    },
+    "backbone.blocks.11.attn.qkv": {
+      "actual_weight_extreme_abs_bound": 139220999952,
+      "conservative_abs_bound": 412333775473,
+      "signed_bits": 40
+    },
+    "backbone.blocks.11.attn.proj": {
+      "actual_weight_extreme_abs_bound": 157665462617,
+      "conservative_abs_bound": 412528106093,
+      "signed_bits": 40
+    },
+    "backbone.blocks.11.mlp.fc1": {
+      "actual_weight_extreme_abs_bound": 138489796530,
+      "conservative_abs_bound": 412318202946,
+      "signed_bits": 40
+    },
+    "backbone.blocks.11.mlp.fc2": {
+      "actual_weight_extreme_abs_bound": 700680163674,
+      "conservative_abs_bound": 1649278948381,
+      "signed_bits": 42
+    },
+    "head.1": {
+      "actual_weight_extreme_abs_bound": 151041207098,
+      "conservative_abs_bound": 412605587018,
+      "signed_bits": 40
+    },
+    "head.4": {
+      "actual_weight_extreme_abs_bound": 51044570247,
+      "conservative_abs_bound": 206485366659,
+      "signed_bits": 39
+    },
+    "head.7": {
+      "actual_weight_extreme_abs_bound": 57391939299,
+      "conservative_abs_bound": 104652379211,
+      "signed_bits": 38
+    }
+  },
+  "limit": "Bounds only: full-network MACs still simulated in float32; not a bit-exact integer network"
+}

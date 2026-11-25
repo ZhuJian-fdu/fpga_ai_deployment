@@ -1,0 +1,65 @@
+Icarus behavioral AXI tests; not a MIG/DDR PHY simulation.
+
+normal_with_stalls
+PASS CASE=0 done=1 failed=0 code=0 checked=1024 cycles=5379
+sim/tb_ddr_full_sweep.sv:129: $finish called at 54020000 (1ps)
+
+corrupt_read_data
+PASS CASE=1 done=0 failed=1 code=4 checked=7 cycles=1156
+sim/tb_ddr_full_sweep.sv:129: $finish called at 11790000 (1ps)
+
+address_alias
+PASS CASE=2 done=0 failed=1 code=4 checked=0 cycles=1137
+sim/tb_ddr_full_sweep.sv:129: $finish called at 11600000 (1ps)
+
+write_error_response
+PASS CASE=3 done=0 failed=1 code=1 checked=0 cycles=35
+sim/tb_ddr_full_sweep.sv:129: $finish called at 580000 (1ps)
+
+read_error_response
+PASS CASE=4 done=0 failed=1 code=2 checked=0 cycles=1137
+sim/tb_ddr_full_sweep.sv:129: $finish called at 11600000 (1ps)
+
+early_rlast
+PASS CASE=5 done=0 failed=1 code=3 checked=3 cycles=1145
+sim/tb_ddr_full_sweep.sv:129: $finish called at 11680000 (1ps)
+
+aw_timeout
+PASS CASE=6 done=0 failed=1 code=5 checked=0 cycles=264
+sim/tb_ddr_full_sweep.sv:129: $finish called at 2790000 (1ps)
+
+unexpected_bid
+PASS CASE=7 done=0 failed=1 code=1 checked=0 cycles=35
+sim/tb_ddr_full_sweep.sv:129: $finish called at 580000 (1ps)
+
+reset_during_write
+PASS CASE=8 done=1 failed=0 code=0 checked=1024 cycles=5407
+sim/tb_ddr_full_sweep.sv:129: $finish called at 55590000 (1ps)
+
+highest_address_boundary
+PASS CASE=9 done=1 failed=0 code=0 checked=64 cycles=332
+sim/tb_ddr_full_sweep.sv:129: $finish called at 3550000 (1ps)
+
+b_timeout
+PASS CASE=10 done=0 failed=1 code=5 checked=0 cycles=297
+sim/tb_ddr_full_sweep.sv:129: $finish called at 3120000 (1ps)
+
+missing_rlast
+PASS CASE=11 done=0 failed=1 code=3 checked=15 cycles=1175
+sim/tb_ddr_full_sweep.sv:129: $finish called at 11980000 (1ps)
+
+aw_timeout_then_recovery
+PASS CASE=12 done=0 failed=1 code=5 checked=0 cycles=308
+sim/tb_ddr_full_sweep.sv:129: $finish called at 3300000 (1ps)
+
+r_timeout_then_recovery
+PASS CASE=13 done=0 failed=1 code=5 checked=0 cycles=1439
+sim/tb_ddr_full_sweep.sv:129: $finish called at 14610000 (1ps)
+
+slave_waits_for_wvalid
+PASS CASE=14 done=1 failed=0 code=0 checked=1024 cycles=5379
+sim/tb_ddr_full_sweep.sv:129: $finish called at 54020000 (1ps)
+
+write_data_before_address
+PASS CASE=15 done=1 failed=0 code=0 checked=1024 cycles=5281
+sim/tb_ddr_full_sweep.sv:129: $finish called at 53040000 (1ps)

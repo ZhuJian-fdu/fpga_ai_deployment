@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-25",
+  "status": "closed_on_acx720_v3_by_user_decision",
+  "reason": "Teaching-board milestone is sufficient; continue full-model deployment only in a future project on a more capable board",
+  "board": "ACX720-V3",
+  "part": "xc7a35tfgg484-2",
+  "completed_fpga_scope": "head.4 Linear 192->96 -> GELU lookup -> head.7 Linear 96->42",
+  "complete_model_deployed": false,
+  "ddr_integrated_with_inference": false,
+  "ddr_standalone_validation": "256 MiB sweep passed by user LED observation",
+  "final_hardware_samples": 1000,
+  "final_records": 42000,
+  "final_hardware_passed": true,
+  "data_split": {
+    "calibration": 300,
+    "development": 1000,
+    "holdout": 8700,
+    "holdout_used_for_inference": false
+  },
+  "final_hardware_report": "integer_tail_uart_hardware.json",
+  "final_acceptance": "integer_tail_acceptance.json",
+  "final_bitstream": "build/integer_tail_hw/acx720_v3_integer_tail.bit",
+  "final_bitstream_sha256": "84a5e5fef733823ea5dca9ccd8006bc472c123f4be51da17c8017947f9cce41b",
+  "local_restore_bundle": {
+    "path": "artifacts/acx720_v3_closeout_20261125.zip",
+    "bytes": 4189170,
+    "sha256": "9448e937971a799ba1eb1745591729c5fdaf8c7a6c6f34571b4236359238d6e9",
+    "committed_to_git": false,
+    "includes_original_model_or_dataset": false
+  },
+  "resume_guidance": "docs/project_closeout.md",
+  "git_publication": "Prepared locally; no commit or push performed during closeout"
+}

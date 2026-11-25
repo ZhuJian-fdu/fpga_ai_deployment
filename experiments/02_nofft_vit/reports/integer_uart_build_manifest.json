@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-25",
+  "part": "xc7a35tfgg484-2",
+  "tool": "Vivado 2023.2",
+  "physical_validation": "pending",
+  "scope": "head.7 only, runtime UART input and result readback; no DDR",
+  "timing_ns": {
+    "WNS": 5.894,
+    "WHS": 0.036,
+    "WPWS": 8.87
+  },
+  "resources": {
+    "LUT": 1165,
+    "registers": 399,
+    "BRAM_tiles": 4,
+    "DSP": 7
+  },
+  "drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": {
+      "DPIP-1": 2,
+      "DPOP-1": 4,
+      "DPOP-2": 7
+    }
+  },
+  "files": {
+    "02_nofft_vit/rtl/int16_dot_requant.v": {
+      "bytes": 2950,
+      "sha256": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d"
+    },
+    "02_nofft_vit/rtl/integer_head_engine.v": {
+      "bytes": 3020,
+      "sha256": "8624deab33825619eaa421e5de0395025c6f5271c4072cef6b749a79980ffb01"
+    },
+    "02_nofft_vit/rtl/integer_head_uart.v": {
+      "bytes": 5325,
+      "sha256": "3fd9d63fbe9fe959b67ecb46dc344ca0dc193cb67cee9339ad003bb98f685e5f"
+    },
+    "02_nofft_vit/board/acx720_v3_integer_uart_top.v": {
+      "bytes": 546,
+      "sha256": "902e10060c2a87b9286eb060fdba86af27fc3743c549ef410d27255b0fb71fc9"
+    },
+    "02_nofft_vit/board/acx720_v3_integer_uart.xdc": {
+      "bytes": 785,
+      "sha256": "3bc81f90005bd4fa82c753d122a1e84b868c6d2dc2e331c3c46e1ef61ed460f4"
+    },
+    "02_nofft_vit/scripts/build_integer_uart.tcl": {
+      "bytes": 2724,
+      "sha256": "5cc44a4aec4b372f5956c94a366e6d908d384d2036d02084633a5907338a99d9"
+    },
+    "02_nofft_vit/scripts/test_integer_uart.py": {
+      "bytes": 2746,
+      "sha256": "9aeb355b9d5fc19e991628851255f4406341c4910b55060b81cbc3a7ba60a8db"
+    },
+    "02_nofft_vit/sim/tb_integer_head_uart.sv": {
+      "bytes": 2583,
+      "sha256": "c85d79f403c0c3d04e13760c2c78f06ebd89192433c055120a092e827113025a"
+    },
+    "02_nofft_vit/software/head_protocol.py": {
+      "bytes": 1866,
+      "sha256": "071854282a8c0702df90d741c27325e6fde3af84d24ffc8ae456a18eb4a16302"
+    },
+    "02_nofft_vit/software/check_integer_head_board.py": {
+      "bytes": 3181,
+      "sha256": "607a94ade94dd1f5b945dd47be5e69591dbbe2a3270454085fc15ee1f9667cc9"
+    },
+    "02_nofft_vit/reports/integer_uart_simulation.json": {
+      "bytes": 976,
+      "sha256": "06da6259da8ad1b1c7c0e1f7ab20aefcace5f89913bd5bcf64007eb17bec62ff"
+    },
+    "02_nofft_vit/build/integer_head/reference.npz": {
+      "bytes": 492552,
+      "sha256": "0ddb814d35d01862c1f8c1960684cb596a42f4a738c432ff313a1825127b8917"
+    },
+    "02_nofft_vit/build/integer_uart_build.log": {
+      "bytes": 110549,
+      "sha256": "518a93820ae67636aa421a4ac0f339718f2a5f92be3281940d7f4352d5347751"
+    },
+    "02_nofft_vit/build/integer_head/weights.mem": {
+      "bytes": 24192,
+      "sha256": "b09dd56a646aa2fd2ef4ec30a54abd92481c31175dca451ddbd451e789f2d3bf"
+    },
+    "02_nofft_vit/build/integer_head/biases.mem": {
+      "bytes": 588,
+      "sha256": "91989dadb0525421d6fcb8c71d61ef59708ba37c7a79061898a6c0733ddc8e9d"
+    },
+    "02_nofft_vit/build/integer_head/multipliers.mem": {
+      "bytes": 420,
+      "sha256": "e296b180df004901a14660531b782bed861d8e4bbb40a7c578e08584293a24cb"
+    },
+    "02_nofft_vit/build/integer_head/shifts.mem": {
+      "bytes": 168,
+      "sha256": "b8137f4343626b1df1cc1ae91e882ad8ef78e134b53706fa826507162172e2a7"
+    },
+    "01_digits_linear/rtl/uart_rx.v": {
+      "bytes": 1832,
+      "sha256": "19773301f3ed6b8957055558a73bc0c58f80c5d1a49186b02e78c9b3e15ccfb1"
+    },
+    "01_digits_linear/rtl/uart_tx.v": {
+      "bytes": 1012,
+      "sha256": "4d7d7b8791d6c255e9029c68b6692e36a685e6ad892485f426e631cf32ca2bbf"
+    },
+    "02_nofft_vit/build/integer_uart_hw/acx720_v3_integer_uart.bit": {
+      "bytes": 2192134,
+      "sha256": "4f55c2c77649f9bd5ec64602d69653415dabcb76ac5353a6e8ff237f87cc71e5"
+    },
+    "02_nofft_vit/build/integer_uart_hw/timing_summary.rpt": {
+      "bytes": 23607,
+      "sha256": "77eba467c23d62d94fdf0c455e7954e1fe5dbfeb4927a82321ce87f583743ff5"
+    },
+    "02_nofft_vit/build/integer_uart_hw/utilization.rpt": {
+      "bytes": 11400,
+      "sha256": "ebe5e1e1f646b58d02efb9586124239d17bd9d7b14639bd343f133b82cf270bb"
+    },
+    "02_nofft_vit/build/integer_uart_hw/drc.rpt": {
+      "bytes": 9795,
+      "sha256": "a32c62f7a3bb1c439e78bb524771ca853ddc1ea19488ca198fbf08e07fa0ed75"
+    },
+    "02_nofft_vit/build/integer_uart_hw/cdc.rpt": {
+      "bytes": 1304,
+      "sha256": "5b3f0090fad03afa474f4d49c7ada935f7ceb361d00ceb6066eb072dee07e1f2"
+    },
+    "02_nofft_vit/build/integer_uart_hw/methodology.rpt": {
+      "bytes": 2703,
+      "sha256": "27effa9310fc0eeeae5f935d8f1c92df98ea80d222a17a6602cdc673a2365a15"
+    },
+    "02_nofft_vit/build/integer_uart_hw/check_timing.rpt": {
+      "bytes": 3378,
+      "sha256": "369cdab6560e174bebc4352506bb214ccfc373ef7fd4e6dd4d58cc0e2035f933"
+    },
+    "02_nofft_vit/build/integer_uart_hw/integer_uart.runs/synth_1/runme.log": {
+      "bytes": 52197,
+      "sha256": "544996ac05813c362cc7b67bbc76894049f927aed2fe45c908348b9b446d0e34"
+    },
+    "02_nofft_vit/build/integer_uart_hw/integer_uart.runs/impl_1/runme.log": {
+      "bytes": 40871,
+      "sha256": "94197cdbf0edb7f45254c2fe40f54bbb6938f3340725d5606a43ddd20ae86d2a"
+    }
+  }
+}

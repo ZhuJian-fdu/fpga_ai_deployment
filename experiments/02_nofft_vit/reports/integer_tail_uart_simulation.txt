@@ -1,0 +1,2 @@
+PASS: UART runtime inputs, 5 replies/1925 bytes, bad CRC, timeout recovery, reset
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_integer_tail_uart.sv:45: $finish called at 4983860000 (1ps)

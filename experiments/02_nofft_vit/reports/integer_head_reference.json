@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-25",
+  "layer": "head.7",
+  "shape": [
+    42,
+    96
+  ],
+  "calibration_samples": 300,
+  "development_samples": 1000,
+  "holdout_used": false,
+  "output_scale": 2.2181399603382176e-05,
+  "output_scale_margin": 1.25,
+  "input_scale": 1.9279470426844847e-05,
+  "accumulator_bits": 48,
+  "conservative_accumulator_bound": 104652379211,
+  "actual_max_abs_accumulator": 4288506692,
+  "bias_int48_safe": true,
+  "multiplier_bits": 31,
+  "shift_min": 47,
+  "shift_max": 49,
+  "requant_code_mismatches_vs_exact_ratio": 0,
+  "requant_max_code_error_vs_exact_ratio": 0,
+  "output_saturations": 0,
+  "head_mac_dequant_max_abs_vs_qdq": 2.1750919898533283e-07,
+  "head_int16_max_abs_vs_qdq": 1.1154935962209844e-05,
+  "head_int16_rmse_vs_qdq": 6.406679665179636e-06,
+  "masked_rmse_vs_fp32": 8.621851863533808e-05,
+  "masked_rmse_vs_labels": 0.1026576516156129,
+  "board_vector_samples": [
+    "58191.npy",
+    "82352.npy",
+    "53387.npy",
+    "29647.npy",
+    "61989.npy",
+    "1635.npy",
+    "29116.npy",
+    "5142.npy",
+    "66721.npy",
+    "96428.npy",
+    "72410.npy",
+    "20195.npy",
+    "92101.npy",
+    "8503.npy",
+    "57745.npy",
+    "10506.npy"
+  ],
+  "board_vector_dot_products": 672,
+  "files": {
+    "biases.mem": {
+      "bytes": 588,
+      "sha256": "91989dadb0525421d6fcb8c71d61ef59708ba37c7a79061898a6c0733ddc8e9d"
+    },
+    "expected_acc.mem": {
+      "bytes": 9408,
+      "sha256": "3534b82bfc4c95867715aef38971d0dc8aeee058faa0659b208e83687f635cef"
+    },
+    "expected_out.mem": {
+      "bytes": 4032,
+      "sha256": "816e0cbf5cd6eb1a585f53f80ab0f70c9d5bc59cd1e6e18d66a557bc6303ef66"
+    },
+    "expected_sat.mem": {
+      "bytes": 2016,
+      "sha256": "cc13cff58ab518f0c357ae3f47a0a14b50000188ae287ca665924ee611f2016c"
+    },
+    "inputs.mem": {
+      "bytes": 9216,
+      "sha256": "78a62cadabae44db08bf7e120b01aa66b99e51e0fa892eb998b1db17b81f96ec"
+    },
+    "multipliers.mem": {
+      "bytes": 420,
+      "sha256": "e296b180df004901a14660531b782bed861d8e4bbb40a7c578e08584293a24cb"
+    },
+    "reference.npz": {
+      "bytes": 492552,
+      "sha256": "0ddb814d35d01862c1f8c1960684cb596a42f4a738c432ff313a1825127b8917"
+    },
+    "shifts.mem": {
+      "bytes": 168,
+      "sha256": "b8137f4343626b1df1cc1ae91e882ad8ef78e134b53706fa826507162172e2a7"
+    },
+    "weights.mem": {
+      "bytes": 24192,
+      "sha256": "b09dd56a646aa2fd2ef4ec30a54abd92481c31175dca451ddbd451e789f2d3bf"
+    }
+  },
+  "scope": "Only final Linear uses actual integer MAC/requant; preceding network remains floating Q/DQ",
+  "hardware_status": "not_yet_tested"
+}

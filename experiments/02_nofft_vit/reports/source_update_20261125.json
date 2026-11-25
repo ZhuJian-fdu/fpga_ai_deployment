@@ -1,0 +1,372 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "scope": "Updated source inspection only; no fresh PyTorch/ONNX inference or FPGA test",
+  "source_files": {
+    "no-fft.tar.gz": {
+      "bytes": 81582915,
+      "sha256": "68ea023804b6cd6001e41139e7c66fec113485cca52b8bde1d6ee47000634257"
+    },
+    "test-5.7z": {
+      "bytes": 285878,
+      "sha256": "fae9b0a363ec8c8a28b959a99a4282032e0ca7649d4cfda39181e557d34bb097"
+    },
+    "Zeg.npy": {
+      "bytes": 110100608,
+      "sha256": "69ac470f8e9de706472bf2fc1ea19c1e66e6add15f22ebbfacc2e598682608f5"
+    }
+  },
+  "archive_members": {
+    "no-fft/run_6-sim.sh": {
+      "bytes": 2542,
+      "sha256": "9d495bedb62d329c289e1ddc7336bc967ca0c6d528174e0e43cdda8c5f350e06"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/train_20261027_220629.log": {
+      "bytes": 13686,
+      "sha256": "72c35902b7c09ddc549df5f601f597b7539eaddf4aa933d556d4a6d37933e2a0"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/train_history.xlsx": {
+      "bytes": 15038,
+      "sha256": "53f3144f0fc39936eec0c6a8ecc79dfc3d10e562fd02dd6ffbf4da0c579b4f13"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/model_best.pth": {
+      "bytes": 87682625,
+      "sha256": "8c57b6f5b2bb93243c94d27af9a874fa800cc1c9237326ffaf835f9d610a6f42"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/table1_metrics.log": {
+      "bytes": 843,
+      "sha256": "9bc5f68ef5e100a40383bbf990890d22dc3dad27c0a8ae61bc9d4d5c56dd4d9f"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/train_history.png": {
+      "bytes": 83339,
+      "sha256": "33839dd266d618123d3c96c13177ef32aee6d320741fcc1720d343c17a52ae46"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/table1_metrics/table1_metrics_per_sample.csv": {
+      "bytes": 511554,
+      "sha256": "4b93940ff5a563fc872c04cab64b1ce99cd36a5524d1454889a7505e1a75c58c"
+    },
+    "no-fft/result/fcas_cbam_vit-ca-5psf-7x6-nofft-small/table1_metrics/table1_metrics.json": {
+      "bytes": 835,
+      "sha256": "fbe0fa27f56eaf5f2735e6928aa598f7e4fbaed5c3df2bf4efcb893eb884d7d5"
+    },
+    "no-fft/psf_zernike_model_fcas_vit.py": {
+      "bytes": 8558,
+      "sha256": "e1747c28ea1da414bd731ff3d1e20da7dec15f29fa1d2cd1299bf4410efda43f"
+    },
+    "no-fft/background_launcher.log": {
+      "bytes": 15632,
+      "sha256": "a91a87c0fe531299bc2ffe1f88806660d350e1270a34cc1aed3d33283b0c2a20"
+    },
+    "no-fft/vit_model.py": {
+      "bytes": 4695,
+      "sha256": "b2744171040bb04bb012d95d55d48f8a492183eb9ab1a03044fd7ed9b2b097e0"
+    },
+    "no-fft/train_fcas_vit_6_sim.py": {
+      "bytes": 13747,
+      "sha256": "19f6b41a592b303081d19f0aa99020fccff3d5fdc9fa02e179260e14c3ac7a8c"
+    },
+    "no-fft/test_6-sim.sh": {
+      "bytes": 891,
+      "sha256": "09fb729e3cb4bf23bdc3eb3d52c67da70896eb670912ec41323236c99085d371"
+    },
+    "no-fft/README.md": {
+      "bytes": 2275,
+      "sha256": "5480d7638354cb71e6ebaa1a7ed6afd42d50d4dcfd3d4c6875c6a103fed71732"
+    },
+    "no-fft/run_6-sim.log": {
+      "bytes": 15572,
+      "sha256": "f0c84ab1b2037eaaf7680f4f375bb58f11737242fa3e352bb7135b3308acfcf1"
+    },
+    "no-fft/start_background.sh": {
+      "bytes": 852,
+      "sha256": "0e6de5bb1c12413be5e27c15ccd3740838dc968589911289ffb6342dc5d6c48c"
+    },
+    "no-fft/get_table1_metrics.py": {
+      "bytes": 7065,
+      "sha256": "b7920e22dedcfbb7460bf7462a1822b47d6f6adb2238b52330590f7cbef715d6"
+    }
+  },
+  "checkpoint": {
+    "sha256": "8c57b6f5b2bb93243c94d27af9a874fa800cc1c9237326ffaf835f9d610a6f42",
+    "matches_prior_audit": true,
+    "state_tensor_count": 176,
+    "parameter_count_excluding_bn_buffers": 21902619,
+    "fp32_parameter_mib": 83.55186080932617,
+    "hypothetical_int8_parameter_mib": 20.887965202331543,
+    "key_shapes": {
+      "backbone.patch_embed.proj.weight": [
+        384,
+        5,
+        16,
+        16
+      ],
+      "backbone.pos_embed": [
+        1,
+        50,
+        384
+      ],
+      "backbone.blocks.0.attn.qkv.weight": [
+        1152,
+        384
+      ],
+      "head.7.weight": [
+        42,
+        96
+      ]
+    }
+  },
+  "source_observations": {
+    "forward_fft_calls_found": false,
+    "effective_patch_size": 16,
+    "requested_patch_size_argument": 8,
+    "training_loss_valid_coefficients": 39,
+    "invalid_flat_indices": [
+      36,
+      37,
+      38
+    ],
+    "evaluation_full_grid_coefficients": 210,
+    "evaluation_zeros_unpredicted_columns": true,
+    "evaluation_includes_unsupervised_outputs": true,
+    "validation_and_test_paths_same": true,
+    "raw_image_preprocessing_generator_present": false,
+    "onnx_or_export_script_present": false,
+    "package_versions_lock_present": false
+  },
+  "samples": [
+    {
+      "name": "11.npy",
+      "sha256": "8b13821b9cff8c9504cefd2d2b0f368e8cab69e30d9b6058f80c97e506cf1f39",
+      "images_shape": [
+        5,
+        112,
+        112
+      ],
+      "images_dtype": "float64",
+      "gt_shape": [
+        7,
+        30
+      ],
+      "gt_dtype": "float32",
+      "finite": true,
+      "channel_ranges": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "gt_remaining_24_columns_abs_max": 0.018144190311431885,
+      "gt_invalid_positions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "21.npy",
+      "sha256": "dbf1b57401d5cc19bed794cd096f021ae9c1be72ed5f7f301629e2a3e99a3457",
+      "images_shape": [
+        5,
+        112,
+        112
+      ],
+      "images_dtype": "float64",
+      "gt_shape": [
+        7,
+        30
+      ],
+      "gt_dtype": "float32",
+      "finite": true,
+      "channel_ranges": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "gt_remaining_24_columns_abs_max": 0.017079899087548256,
+      "gt_invalid_positions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "24.npy",
+      "sha256": "d3b3ad1d80678f6dc73d85edc5d9138ae5d8b121db626cc1b9bb25403871f312",
+      "images_shape": [
+        5,
+        112,
+        112
+      ],
+      "images_dtype": "float64",
+      "gt_shape": [
+        7,
+        30
+      ],
+      "gt_dtype": "float32",
+      "finite": true,
+      "channel_ranges": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "gt_remaining_24_columns_abs_max": 0.01992969773709774,
+      "gt_invalid_positions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "26.npy",
+      "sha256": "3ab72b1ad6f0663a14eebb6d6af560b437eac5206cd2f93a5b84ff51f1a3e505",
+      "images_shape": [
+        5,
+        112,
+        112
+      ],
+      "images_dtype": "float64",
+      "gt_shape": [
+        7,
+        30
+      ],
+      "gt_dtype": "float32",
+      "finite": true,
+      "channel_ranges": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "gt_remaining_24_columns_abs_max": 0.014605258591473103,
+      "gt_invalid_positions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "31.npy",
+      "sha256": "9b5195826852bdbba0dc563cc4245a716964945d3ca54a4b80e93001b308af9e",
+      "images_shape": [
+        5,
+        112,
+        112
+      ],
+      "images_dtype": "float64",
+      "gt_shape": [
+        7,
+        30
+      ],
+      "gt_dtype": "float32",
+      "finite": true,
+      "channel_ranges": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "gt_remaining_24_columns_abs_max": 0.018187643960118294,
+      "gt_invalid_positions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "basis": {
+    "shape": [
+      7,
+      30,
+      256,
+      256
+    ],
+    "dtype": "float64",
+    "finite": true,
+    "min": -47.504211594444556,
+    "max": 47.504211594444556,
+    "first_three_modes_of_last_segment_abs_max": 1.0,
+    "usage": "Full-plane wavefront error in supplied evaluator; not part of model forward"
+  }
+}

@@ -1,0 +1,12 @@
+# V3 clock/S4/LED pins; MIG-generated XDC owns all DDR pins and PHY timing.
+set_property PACKAGE_PIN Y18 [get_ports clk50m]
+set_property PACKAGE_PIN B21 [get_ports reset_n]
+set_property PACKAGE_PIN M22 [get_ports led0]
+set_property PACKAGE_PIN N22 [get_ports led1]
+set_property PACKAGE_PIN L21 [get_ports led2]
+set_property IOSTANDARD LVCMOS33 [get_ports {clk50m reset_n led0 led1 led2}]
+# clk_wiz_0 supplies the 20 ns input clock and generated-clock constraints.
+set_false_path -from [get_ports reset_n]
+set_false_path -to [get_ports {led0 led1 led2}]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]

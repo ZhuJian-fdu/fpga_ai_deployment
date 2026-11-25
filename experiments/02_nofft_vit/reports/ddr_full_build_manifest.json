@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-25",
+  "tool": "Vivado 2023.2",
+  "part": "xc7a35tfgg484-2",
+  "build_mode": "reuse IP; re-synthesize and re-implement final top and test RTL",
+  "physical_validation": "pending",
+  "behavioral_axi_tests_passed": 16,
+  "full_ddr_phy_simulation": "not_run",
+  "timing_ns": {
+    "WNS": 0.982,
+    "WHS": 0.041,
+    "WPWS": 0.0
+  },
+  "utilization": {
+    "LUT": 5825,
+    "registers": 4926,
+    "BRAM": 0,
+    "DSP": 0
+  },
+  "drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": {
+      "BUFC-1": 2,
+      "REQP-1709": 1
+    }
+  },
+  "test": {
+    "address_range_bytes": [
+      "0x0000000",
+      "0xfffffff"
+    ],
+    "passes": 2,
+    "bytes_written": 536870912,
+    "bytes_compared": 536870912,
+    "beats_compared": 33554432
+  },
+  "files": {
+    "rtl/ddr_full_sweep.v": {
+      "bytes": 5444,
+      "sha256": "738d9c112dfdd9610afe4f492389da8a5f02919778bb9eaa2544c31a9f0c93a2"
+    },
+    "board/acx720_v3_ddr_full_top.v": {
+      "bytes": 4084,
+      "sha256": "21ff8e1563f15199da1fa886d05cd0977b37a1cf38998fb82685338a89a142ff"
+    },
+    "board/acx720_v3_ddr_test.xdc": {
+      "bytes": 644,
+      "sha256": "1b0fb5dba4c1edf675ae7bbb5b99787d7b6310b81a9b75107f4c2721d12513d0"
+    },
+    "scripts/build_ddr_full.tcl": {
+      "bytes": 2745,
+      "sha256": "6cd15ab065c1356a61e03dac5fb91555f5d74838a88b8b2465ab29709250ed20"
+    },
+    "scripts/test_ddr_full.py": {
+      "bytes": 1582,
+      "sha256": "3fa8a2bb1a968c5f36f6384fb841f32a6e49f371092f89552f62ec1dcf54f487"
+    },
+    "sim/tb_ddr_full_sweep.sv": {
+      "bytes": 6302,
+      "sha256": "d703c51fda9b0e8259d54410aed6f86c79c65a89a43efeaf7ecad5987c883232"
+    },
+    "build/ddr_sources/mig_35t.prj": {
+      "bytes": 8642,
+      "sha256": "676cd8046992f35ed4cafbf37d4ffc34bc9397fb1542c00ad01507b4c308a303"
+    },
+    "reports/ddr_full_simulation.txt": {
+      "bytes": 2360,
+      "sha256": "c3b351adc0dfd846f320ab3672ad7d4843e43c2e07d1be86546c9a5918904dc0"
+    },
+    "build/ddr_full/acx720_v3_ddr_full.bit": {
+      "bytes": 2192130,
+      "sha256": "4a679810a0598a2d74f10b2271a867c27ac3db53b8f44b81c351e6c61d84b82b"
+    },
+    "build/vivado/ddr_full_final_build.log": {
+      "bytes": 119688,
+      "sha256": "bfaa77a32db915917837caff9a0941cb39f8f692e4ce4445a5ceb3af745a05ec"
+    },
+    "build/ddr_full/cdc.rpt": {
+      "bytes": 4881,
+      "sha256": "f09fc2d7adbb67638b8ff6ff08b4fd33b8ea01667997e3ad8c7148296c740866"
+    },
+    "build/ddr_full/check_timing_verbose.rpt": {
+      "bytes": 3378,
+      "sha256": "5e1f619d41c618037e8e7364b80291fe432d2a7acb835654946ac627dca7d444"
+    },
+    "build/ddr_full/drc.rpt": {
+      "bytes": 3034,
+      "sha256": "6fb77b454695426d0706084ea6ff4f20a426c61e215446ccbc63775187cb9e00"
+    },
+    "build/ddr_full/ip_status.rpt": {
+      "bytes": 2903,
+      "sha256": "debfdf5cd136601a04a5ea47dbb0a2d84b3c0736af4a35172d236361772aa372"
+    },
+    "build/ddr_full/methodology.rpt": {
+      "bytes": 9871,
+      "sha256": "b53d911345d6d2f58857377a6f2f6de6183683d44534ee20445ec90fd76a9c21"
+    },
+    "build/ddr_full/timing_summary.rpt": {
+      "bytes": 410480,
+      "sha256": "7d4ddeefaaf89cc06d828a817d3b17d2add3a6510a9fdaa82fd78e1af777d45c"
+    },
+    "build/ddr_full/utilization.rpt": {
+      "bytes": 13710,
+      "sha256": "b1459a2a3fc443bdad5a1503c71d682158bb8c83b47fa2433ea8bd416f5201fe"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-25",
+  "source": "user_report",
+  "user_message": "灯的状态与预期一致",
+  "bitstream_sha256": "984ae31d03db3e3687b203c43bb07ad4eafaf5e9a7a9fecba40f12f9aa086f25",
+  "led0": "blinking",
+  "led1": "on",
+  "led2": "off",
+  "observation_duration_seconds": null,
+  "result": "initial_observation_pass",
+  "full_capacity_verified": false
+}

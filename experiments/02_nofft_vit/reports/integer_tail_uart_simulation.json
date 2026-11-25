@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-25",
+  "passed": true,
+  "transactions": 5,
+  "reply_bytes_compared": 1925,
+  "checks": [
+    "actual_serial_lines",
+    "runtime_input_replacement",
+    "CRC_reject",
+    "timeout_recovery",
+    "reset",
+    "host_decoder"
+  ],
+  "source_sha256": {
+    "02_nofft_vit\\rtl\\int16_dot_requant.v": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d",
+    "02_nofft_vit\\rtl\\integer_dense_engine.v": "7d18444a1c614f48b92196a2b4c238c9e1f6066815be8db703fef4265d3643b6",
+    "02_nofft_vit\\rtl\\integer_tail_engine.v": "5bc6c7897c8f85a63a8117a36cc75bc234476255434fdfa814e3db9bb9d8caba",
+    "02_nofft_vit\\rtl\\integer_tail_uart.v": "9e449d02306893ad7cd06ede6af8fe543bb618d0017df6c6145b262e2ab46a16",
+    "01_digits_linear\\rtl\\uart_rx.v": "19773301f3ed6b8957055558a73bc0c58f80c5d1a49186b02e78c9b3e15ccfb1",
+    "01_digits_linear\\rtl\\uart_tx.v": "4d7d7b8791d6c255e9029c68b6692e36a685e6ad892485f426e631cf32ca2bbf",
+    "02_nofft_vit\\sim\\tb_integer_tail_uart.sv": "fe70fff9d5a965da4057e64d9a6e640a5395f063d0133142ccdde2215b9caed1"
+  }
+}

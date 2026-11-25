@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-25",
+  "source": "user_report",
+  "user_message": "满足预期",
+  "bitstream_sha256": "78d39f7f3aa513f24fb28dc4e609516af9c7bd24a5eab05a914381e4005995e2",
+  "led0": "on",
+  "led1": "blinking",
+  "led2": "off",
+  "result": "integer_head_fixed_vector_selftest_pass",
+  "dot_products": 672,
+  "samples": 16,
+  "scope": "head.7 only; fixed vectors in ROM; not complete network inference",
+  "independent_telemetry": false
+}

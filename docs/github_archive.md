@@ -7,7 +7,7 @@
 
 `.gitignore` 排除了 `.venv/`、`build/`、`board/vendor/`、Vivado 临时文件与生成的 `.bit`。
 不要使用 `git add -f` 强行加入这些目录；源码归档无需上传安装包、视频和厂商整套资料。
-本仓库另存了模型快照，因此恢复历史模型不依赖本机 `build/`。
+实验 01 另存了模型快照，其恢复不依赖原本机 `build/`；实验 02 不包含原始模型/数据，恢复边界见文末。
 
 ## 首次提交和上传
 
@@ -84,3 +84,24 @@ Git 可能规范化源码换行；历史源码哈希应按当时的原始字节�
 保留 `experiments/01_digits_linear/` 的基线，增加新模型或更换板卡时新建
 `experiments/02_name/` 等目录，并更新根目录实验索引。每个实验记录模型来源、
 板卡/器件、工具版本、复现命令和真实验收结果。
+
+
+## 实验 02 的结束归档（2026-11-25）
+
+ACX720-V3 上的 no-FFT 模型教学实验已结束，完成两层全连接加 GELU 的 1,000 组实板核对，完整网络尚未上板。
+参见 [结束与换板交接](../experiments/02_nofft_vit/docs/project_closeout.md) 和 [归档检查](../experiments/02_nofft_vit/reports/archive_preflight.json)。
+本次仅整理本地文件，尚未代为提交或推送。当前仓库已设置 origin/main，可在根目录检查后执行：
+
+```powershell
+git status --short
+git add --dry-run .
+git add .
+git diff --cached --check
+git diff --cached --stat
+git commit -m "Archive ACX720-V3 no-FFT partial deployment milestone"
+git push origin main
+```
+
+不要用 `git add -f` 加入忽略的目录。约 4 MiB 的本地复现包位于实验 02 的 `artifacts/`，
+其中有模型派生参数和向量，留作个人恢复备份，不属于本次公开提交。
+只克隆 GitHub 并不能恢复实验 02 的所有原始输入；请另外保留原始 `F:/no-fft`、厂家资料及本地包。

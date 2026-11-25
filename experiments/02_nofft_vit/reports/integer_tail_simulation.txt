@@ -1,0 +1,2 @@
+PASS: 16 runtime vectors, 1536 intermediate MAC/GELU values, 672 final records, output stalls and reset abort
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_integer_tail_engine.sv:58: $finish called at 7354550000 (1ps)

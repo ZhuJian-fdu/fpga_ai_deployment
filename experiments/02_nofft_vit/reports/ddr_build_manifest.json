@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-25",
+  "tool": "Vivado 2023.2",
+  "part": "xc7a35tfgg484-2",
+  "physical_validation": "pending",
+  "full_ddr_simulation": "not_run",
+  "generated_inputs_reproduced_byte_identically": true,
+  "timing_ns": {
+    "WNS": 0.982,
+    "WHS": 0.039,
+    "WPWS": 0.0
+  },
+  "utilization": {
+    "LUT": 6252,
+    "registers": 5631,
+    "BRAM": 0,
+    "DSP": 0
+  },
+  "drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": {
+      "BUFC-1": 2,
+      "REQP-1709": 1
+    }
+  },
+  "files": {
+    "board/acx720_v3_ddr_test_top.v": {
+      "bytes": 1667,
+      "sha256": "db8009b767af042dda1b59f75100c4e88fa505d9b8fa943946c1d9739fd9106d"
+    },
+    "board/acx720_v3_ddr_test.xdc": {
+      "bytes": 644,
+      "sha256": "1b0fb5dba4c1edf675ae7bbb5b99787d7b6310b81a9b75107f4c2721d12513d0"
+    },
+    "scripts/prepare_ddr_test.py": {
+      "bytes": 4976,
+      "sha256": "c8c881330cb7ca5d61172a1fc2446cf5da51ba3c2c50ae979606f5afcb88b4cc"
+    },
+    "scripts/build_ddr_test.tcl": {
+      "bytes": 2288,
+      "sha256": "5fc6523a3b3c6b88e3d0064feee8507dfdf76756920991c2c5f0475d64186725"
+    },
+    "scripts/inspect_ddr_test.tcl": {
+      "bytes": 812,
+      "sha256": "7cc306945b2813b2f72fac2aa8c652c95cd88a563941e93c788127f7b2d957cb"
+    },
+    "reports/ddr_source_audit.json": {
+      "bytes": 3625,
+      "sha256": "f9b9f10a89e5c2616f7548d2c30d87ce16953ebcfcd38f39c5cd69150f7e5d91"
+    },
+    "build/ddr_test/acx720_v3_ddr_test.bit": {
+      "bytes": 2192130,
+      "sha256": "984ae31d03db3e3687b203c43bb07ad4eafaf5e9a7a9fecba40f12f9aa086f25"
+    },
+    "build/ddr_sources/example_top.v": {
+      "bytes": 32589,
+      "sha256": "2e4ee1027c5d9916c1d42781b9ed67634c255c7171fd8c5811d583567f987396"
+    },
+    "build/ddr_sources/mig_35t.prj": {
+      "bytes": 8642,
+      "sha256": "676cd8046992f35ed4cafbf37d4ffc34bc9397fb1542c00ad01507b4c308a303"
+    },
+    "build/ddr_sources/mig_7series_v4_2_axi4_tg.v": {
+      "bytes": 18550,
+      "sha256": "5fdc918b93616e85b6618768e0bf1862b9f0479bed01c1346b0e496870a6ee3d"
+    },
+    "build/ddr_sources/mig_7series_v4_2_axi4_wrapper.v": {
+      "bytes": 33395,
+      "sha256": "764d484faf981b6b9bc83d53a47d2c7160947aa8b2e64b20f11c5c3b6b6bb917"
+    },
+    "build/ddr_sources/mig_7series_v4_2_cmd_prbs_gen_axi.v": {
+      "bytes": 10316,
+      "sha256": "5064c97bace85149227963955be80ba778a6dc45a36e7261da6e5ab2cbf4e8be"
+    },
+    "build/ddr_sources/mig_7series_v4_2_data_gen_chk.v": {
+      "bytes": 7249,
+      "sha256": "80eb1b9d54f4c04f9bdd5451c11c7080aa6e1861c08e7a1d103a5ca47ccd54c3"
+    },
+    "build/ddr_sources/mig_7series_v4_2_tg.v": {
+      "bytes": 27431,
+      "sha256": "f783acc1cfe352f60c1af580a4b5b13080ff184c5726032d55ccb7937bb7c70e"
+    },
+    "build/ddr_test/cdc.rpt": {
+      "bytes": 4881,
+      "sha256": "94530d016accd400b61d3cf842b34d9fca694014e5838eafd7f365ce55aca35e"
+    },
+    "build/ddr_test/check_timing_verbose.rpt": {
+      "bytes": 3378,
+      "sha256": "49cafa6f173541a6f37413a0ff9f3b00647c0fa337e0bf33189e6f3fa97e25c8"
+    },
+    "build/ddr_test/drc.rpt": {
+      "bytes": 3146,
+      "sha256": "76e05170a8f4e31b942e08eccec0aa076e815610a74269d6c1009d8dcf82e638"
+    },
+    "build/ddr_test/io.rpt": {
+      "bytes": 150809,
+      "sha256": "a5bcf666015e9ad9f2004bb9e3e1d36ec6d9cbc523658cd329e150d84649de10"
+    },
+    "build/ddr_test/ip_status.rpt": {
+      "bytes": 2903,
+      "sha256": "353aa8c65c8ad8ffffb85eea88ae1bbb4de8f064ef0928fd3d0fd13f06e6c5c6"
+    },
+    "build/ddr_test/methodology.rpt": {
+      "bytes": 10383,
+      "sha256": "1033d109214aeadda43f260081e56848d931c38c83b54bf125260d7a2c8b999e"
+    },
+    "build/ddr_test/timing_summary.rpt": {
+      "bytes": 421705,
+      "sha256": "5b3e23047c14656a83eda61c9f4e278680732e6a831f09d7f62f9b44445685d9"
+    },
+    "build/ddr_test/utilization.rpt": {
+      "bytes": 13710,
+      "sha256": "eb3cff011acbe082ba2968aee038d1fa234cd0e07d51cf95902a75d90426a5a8"
+    }
+  }
+}

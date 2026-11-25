@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-25",
+  "directed_random_dot_cases": 124,
+  "real_vector_dot_products": 672,
+  "wrapper_cases": [
+    "normal",
+    "corrupted_expected_output_detected",
+    "reset_during_test"
+  ],
+  "passed": true,
+  "source_sha256": {
+    "rtl/int16_dot_requant.v": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d",
+    "rtl/integer_head_selftest.v": "2980290e24bc31136c5470ca4fce08d4a2d86419417b43f6449eddcfa618fedb",
+    "sim/tb_int16_dot_requant.sv": "426328e21604f18eb2275aa0a34754121acb731f378899f0c9f776545bbea021",
+    "sim/tb_integer_head_selftest.sv": "9b11355fe06f62540622225cba3275b3347b4a18461b497c81ce276142a782eb"
+  }
+}

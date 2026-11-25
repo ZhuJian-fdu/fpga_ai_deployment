@@ -1,0 +1,647 @@
+{
+  "date": "2026-11-25",
+  "samples": 300,
+  "split": "calibration",
+  "dataset_manifest_sha256": "5a623423a7a025f2270db421b614c9e3588fd011c2e623de364ed417c6cbd2a8",
+  "sites": {
+    "spatial_module.ca.conv1.input": {
+      "min": -0.40829581022262573,
+      "max": 1.8211628198623657,
+      "elements": 336000,
+      "unsigned": false
+    },
+    "spatial_module.ca.conv_h.input": {
+      "min": -0.375,
+      "max": 8.105798721313477,
+      "elements": 268800,
+      "unsigned": false
+    },
+    "spatial_module.ca.conv_w.input": {
+      "min": -0.375,
+      "max": 6.948523044586182,
+      "elements": 268800,
+      "unsigned": false
+    },
+    "spatial_module.cbam.channel_attention.mlp.0.input": {
+      "min": -0.2332579493522644,
+      "max": 28.30890655517578,
+      "elements": 3000,
+      "unsigned": false
+    },
+    "spatial_module.cbam.channel_attention.mlp.2.input": {
+      "min": 0.0,
+      "max": 6.089747428894043,
+      "elements": 600,
+      "unsigned": false
+    },
+    "spatial_module.cbam.spatial_attention.conv.input": {
+      "min": -0.2429543435573578,
+      "max": 28.30890655517578,
+      "elements": 7526400,
+      "unsigned": false
+    },
+    "backbone.patch_embed.proj.input": {
+      "min": -0.04630988463759422,
+      "max": 2.2086293697357178,
+      "elements": 18816000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.attn.qkv.input": {
+      "min": -4.710653781890869,
+      "max": 4.557946681976318,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.attn.q_scaled": {
+      "min": -0.40011101961135864,
+      "max": 0.40533989667892456,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.attn.k": {
+      "min": -2.775911331176758,
+      "max": 2.9545130729675293,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.attn.v": {
+      "min": -2.3108420372009277,
+      "max": 2.151730537414551,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.attn.prob": {
+      "min": 1.5996998627088033e-05,
+      "max": 0.9694473147392273,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.0.attn.proj.input": {
+      "min": -1.1754060983657837,
+      "max": 1.0208247900009155,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.mlp.fc1.input": {
+      "min": -4.84283971786499,
+      "max": 4.8647308349609375,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.0.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 2.2996416091918945,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.attn.qkv.input": {
+      "min": -4.483607769012451,
+      "max": 4.550419330596924,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.attn.q_scaled": {
+      "min": -0.4471431374549866,
+      "max": 0.42683857679367065,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.attn.k": {
+      "min": -3.6419596672058105,
+      "max": 3.7944369316101074,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.attn.v": {
+      "min": -2.213812828063965,
+      "max": 2.4102373123168945,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.attn.prob": {
+      "min": 2.075737270956779e-08,
+      "max": 0.9958913326263428,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.1.attn.proj.input": {
+      "min": -1.5963740348815918,
+      "max": 1.8644888401031494,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.mlp.fc1.input": {
+      "min": -4.621749401092529,
+      "max": 5.070961952209473,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.1.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 5.799667835235596,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.attn.qkv.input": {
+      "min": -4.775158405303955,
+      "max": 4.745425701141357,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.attn.q_scaled": {
+      "min": -0.522840142250061,
+      "max": 0.588392972946167,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.attn.k": {
+      "min": -4.040774822235107,
+      "max": 4.228610515594482,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.attn.v": {
+      "min": -2.926887035369873,
+      "max": 2.8989362716674805,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.attn.prob": {
+      "min": 2.4567884185366928e-11,
+      "max": 0.9999959468841553,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.2.attn.proj.input": {
+      "min": -2.5813446044921875,
+      "max": 2.4616453647613525,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.mlp.fc1.input": {
+      "min": -4.864489555358887,
+      "max": 5.106077671051025,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.2.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 2.551048994064331,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.attn.qkv.input": {
+      "min": -4.593404769897461,
+      "max": 6.162492752075195,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.attn.q_scaled": {
+      "min": -0.4138827919960022,
+      "max": 0.4103037118911743,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.attn.k": {
+      "min": -2.9755795001983643,
+      "max": 2.880988359451294,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.attn.v": {
+      "min": -2.1093008518218994,
+      "max": 1.9130289554595947,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.attn.prob": {
+      "min": 0.00011373189045116305,
+      "max": 0.9493453502655029,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.3.attn.proj.input": {
+      "min": -1.1572725772857666,
+      "max": 1.0803221464157104,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.mlp.fc1.input": {
+      "min": -4.842467784881592,
+      "max": 6.340939521789551,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.3.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 2.5934956073760986,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.attn.qkv.input": {
+      "min": -4.392408847808838,
+      "max": 7.776484966278076,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.attn.q_scaled": {
+      "min": -0.4084486663341522,
+      "max": 0.4575374722480774,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.attn.k": {
+      "min": -3.2984399795532227,
+      "max": 3.3078808784484863,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.attn.v": {
+      "min": -2.0332093238830566,
+      "max": 2.1867711544036865,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.attn.prob": {
+      "min": 4.940841904499393e-07,
+      "max": 0.9934453964233398,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.4.attn.proj.input": {
+      "min": -1.5455684661865234,
+      "max": 1.6154602766036987,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.mlp.fc1.input": {
+      "min": -4.536591053009033,
+      "max": 8.08995246887207,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.4.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 3.2403833866119385,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.attn.qkv.input": {
+      "min": -4.3009772300720215,
+      "max": 9.035468101501465,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.attn.q_scaled": {
+      "min": -0.44326406717300415,
+      "max": 0.40560001134872437,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.attn.k": {
+      "min": -2.8990044593811035,
+      "max": 3.671113967895508,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.attn.v": {
+      "min": -2.0023043155670166,
+      "max": 2.0314438343048096,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.attn.prob": {
+      "min": 2.3848051569075324e-05,
+      "max": 0.5793439745903015,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.5.attn.proj.input": {
+      "min": -1.2845607995986938,
+      "max": 1.425682783126831,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.mlp.fc1.input": {
+      "min": -4.631237506866455,
+      "max": 9.567937850952148,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.5.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 3.5504939556121826,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.attn.qkv.input": {
+      "min": -4.635357856750488,
+      "max": 10.021100997924805,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.attn.q_scaled": {
+      "min": -0.46959611773490906,
+      "max": 0.44543328881263733,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.attn.k": {
+      "min": -3.145392417907715,
+      "max": 3.1482481956481934,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.attn.v": {
+      "min": -1.8274204730987549,
+      "max": 2.0321993827819824,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.attn.prob": {
+      "min": 2.5349694132009715e-12,
+      "max": 0.9140045642852783,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.6.attn.proj.input": {
+      "min": -1.2586146593093872,
+      "max": 1.3302860260009766,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.mlp.fc1.input": {
+      "min": -4.67311429977417,
+      "max": 10.36672306060791,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.6.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 3.7196102142333984,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.attn.qkv.input": {
+      "min": -4.531991004943848,
+      "max": 10.705720901489258,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.attn.q_scaled": {
+      "min": -0.45679783821105957,
+      "max": 0.48020708560943604,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.attn.k": {
+      "min": -3.3651199340820312,
+      "max": 3.4298946857452393,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.attn.v": {
+      "min": -2.322348117828369,
+      "max": 2.288846015930176,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.attn.prob": {
+      "min": 2.70025077601585e-13,
+      "max": 0.6940062046051025,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.7.attn.proj.input": {
+      "min": -1.506068468093872,
+      "max": 1.8174962997436523,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.mlp.fc1.input": {
+      "min": -4.530035018920898,
+      "max": 11.244585990905762,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.7.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 5.145321369171143,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.attn.qkv.input": {
+      "min": -4.340027332305908,
+      "max": 11.943720817565918,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.attn.q_scaled": {
+      "min": -0.7624017000198364,
+      "max": 0.9165612459182739,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.attn.k": {
+      "min": -4.214920997619629,
+      "max": 4.405627250671387,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.attn.v": {
+      "min": -2.3239755630493164,
+      "max": 2.849513530731201,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.attn.prob": {
+      "min": 4.3873120866259886e-23,
+      "max": 1.0,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.8.attn.proj.input": {
+      "min": -2.0116519927978516,
+      "max": 1.8287429809570312,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.mlp.fc1.input": {
+      "min": -4.818694114685059,
+      "max": 11.994819641113281,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.8.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 4.08951997756958,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.attn.qkv.input": {
+      "min": -4.212431907653809,
+      "max": 12.583294868469238,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.attn.q_scaled": {
+      "min": -0.6284207105636597,
+      "max": 0.6924054622650146,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.attn.k": {
+      "min": -4.204470157623291,
+      "max": 4.435367107391357,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.attn.v": {
+      "min": -2.5108158588409424,
+      "max": 2.660162925720215,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.attn.prob": {
+      "min": 2.1533487220441836e-23,
+      "max": 0.9846411347389221,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.9.attn.proj.input": {
+      "min": -2.1674532890319824,
+      "max": 2.109726667404175,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.mlp.fc1.input": {
+      "min": -4.492067813873291,
+      "max": 12.327872276306152,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.9.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 3.11749529838562,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.attn.qkv.input": {
+      "min": -4.305685997009277,
+      "max": 13.369895935058594,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.attn.q_scaled": {
+      "min": -0.5241729021072388,
+      "max": 0.6055225729942322,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.attn.k": {
+      "min": -3.6951091289520264,
+      "max": 3.5819661617279053,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.attn.v": {
+      "min": -2.3891186714172363,
+      "max": 2.245941400527954,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.attn.prob": {
+      "min": 4.3457140663782923e-10,
+      "max": 0.9979031085968018,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.10.attn.proj.input": {
+      "min": -2.067171096801758,
+      "max": 1.9753899574279785,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.mlp.fc1.input": {
+      "min": -4.384150505065918,
+      "max": 13.495282173156738,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.10.mlp.fc2.input": {
+      "min": -0.1699712574481964,
+      "max": 3.204629421234131,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.attn.qkv.input": {
+      "min": -4.364386558532715,
+      "max": 15.026022911071777,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.attn.q_scaled": {
+      "min": -0.6073748469352722,
+      "max": 0.5417717695236206,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.attn.k": {
+      "min": -3.6688332557678223,
+      "max": 4.539717197418213,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.attn.v": {
+      "min": -2.5051331520080566,
+      "max": 2.5784778594970703,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.attn.prob": {
+      "min": 2.7496511333173737e-18,
+      "max": 0.9999668598175049,
+      "elements": 4500000,
+      "unsigned": true
+    },
+    "backbone.blocks.11.attn.proj.input": {
+      "min": -2.448568820953369,
+      "max": 2.4722907543182373,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.mlp.fc1.input": {
+      "min": -5.16325044631958,
+      "max": 16.307456970214844,
+      "elements": 5760000,
+      "unsigned": false
+    },
+    "backbone.blocks.11.mlp.fc2.input": {
+      "min": -0.16997124254703522,
+      "max": 5.332064628601074,
+      "elements": 23040000,
+      "unsigned": false
+    },
+    "head.1.input": {
+      "min": -2.3243422508239746,
+      "max": 5.542333602905273,
+      "elements": 115200,
+      "unsigned": false
+    },
+    "head.4.input": {
+      "min": -0.16997084021568298,
+      "max": 0.8950604796409607,
+      "elements": 57600,
+      "unsigned": false
+    },
+    "head.7.input": {
+      "min": -0.1699710637331009,
+      "max": 0.5053843259811401,
+      "elements": 28800,
+      "unsigned": false
+    }
+  },
+  "method": "FP32 min/max, per site; fixed [0,1] for softmax probabilities",
+  "development_used_for_ranges": false,
+  "holdout_used": false
+}

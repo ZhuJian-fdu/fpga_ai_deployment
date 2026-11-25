@@ -7,6 +7,9 @@
 | 编号 | 实验 | 目标芯片 | 当前边界 |
 |---|---|---|---|
 | 01 | [8×8 手写数字线性分类器](experiments/01_digits_linear/README.md) | ACX720-V3 / XC7A35T-FGG484-2 | 已完成实板推理：4500 个分数一致，准确率 433/450（96.22%） |
+| 02 | [no-FFT PSF 系数回归：CA + CBAM + ViT](experiments/02_nofft_vit/README.md) | ACX720-V3 / XC7A35T-FGG484-2 | 教学阶段已结束：两层全连接+GELU 实板 1,000 组通过；整网未部署，待以后换板另开实验 |
+
+实验 02 已于 2026-11-25 按用户决定结束当前板卡上的模型部署，见 [结束与换板交接](experiments/02_nofft_vit/docs/project_closeout.md)。
 
 ## 目录约定
 
@@ -24,7 +27,8 @@
 
 打开 [实验 01](experiments/01_digits_linear/README.md)，按其步骤操作。
 上传与克隆后恢复请看 [GitHub 留档指南](docs/github_archive.md)。
-仓库已归档至 [GitHub](https://github.com/ZhuJian-fdu/fpga_ai_deployment)。
-2026-11-25 已从远程重新克隆并通过模型恢复与四项仿真，见 [远程归档检查](experiments/01_digits_linear/reports/github_validation.md)。
+实验 01 的历史版本已归档至 [GitHub](https://github.com/ZhuJian-fdu/fpga_ai_deployment)。
+实验 01 于 2026-11-25 从远程重新克隆并通过模型恢复与四项仿真，见 [远程归档检查](experiments/01_digits_linear/reports/github_validation.md)。
+实验 02 的本次收尾已在本地整理；本次未执行 commit 或 push。
 后续提交前检查 `.gitignore`，不提交工具安装包、
 完整第三方资料、私有文件或大体积生成物。第三方板卡资料优先记录官方链接。

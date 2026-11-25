@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-25T15:04:33.873776+08:00",
+  "port": "COM10",
+  "baud": 115200,
+  "source": "automated_UART_readback",
+  "requested_samples": 1000,
+  "checked_samples": 1000,
+  "compared_outputs": 42000,
+  "passed": true,
+  "failures": [],
+  "elapsed_seconds": 171.85899999999947,
+  "reference_sha256": "e307744b9f064c20074553db9c61d37332520fd8f2d71a8b8efe43ec6fca9740",
+  "scope": "head.4 -> GELU -> head.7; earlier network CPU Q/DQ",
+  "holdout_used": false
+}

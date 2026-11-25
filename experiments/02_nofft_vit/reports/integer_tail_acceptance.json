@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-25T15:04:33.873776+08:00",
+  "passed": true,
+  "scope": "head.4 -> GELU -> head.7; earlier network CPU Q/DQ",
+  "checked_samples": 1000,
+  "compared_final_records": 42000,
+  "intermediate_values_read_back": false,
+  "holdout_used": false,
+  "device": {
+    "port": "COM10",
+    "description": "USB-SERIAL CH340 (COM10)",
+    "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-2.1"
+  },
+  "firmware_identity_basis": "User confirmed downloading the requested bitstream; no independent configuration identity readback",
+  "command": ".\\.venv\\Scripts\\python.exe experiments\\02_nofft_vit\\software\\check_integer_tail_board.py --port COM10 --limit 1000",
+  "files": {
+    "reports/integer_tail_uart_hardware.json": {
+      "sha256": "bc07ce5c8232b78f6bdff04645fc5d4496e840a8a9bbbc5d8dffc3f49beb7c3b",
+      "bytes": 482
+    },
+    "reports/integer_tail_build_manifest.json": {
+      "sha256": "82112df172968fe3ef3aed62ad415521c175d95faf36b9979d6c21c07a654c3a",
+      "bytes": 7573
+    },
+    "software/check_integer_tail_board.py": {
+      "sha256": "6bb9bedc50069ce4ca1956f98cea6dc9b1f17fe88b8d1b7097f201952c8f45e0",
+      "bytes": 3214
+    },
+    "software/tail_protocol.py": {
+      "sha256": "7f9054afb18c27913e0c7db33e5680d9041072a5e1d1a8630482530fb04ed13b",
+      "bytes": 1910
+    },
+    "build/integer_tail/reference.npz": {
+      "sha256": "e307744b9f064c20074553db9c61d37332520fd8f2d71a8b8efe43ec6fca9740",
+      "bytes": 1504143
+    },
+    "build/integer_tail_hw/acx720_v3_integer_tail.bit": {
+      "sha256": "84a5e5fef733823ea5dca9ccd8006bc472c123f4be51da17c8017947f9cce41b",
+      "bytes": 2192134
+    }
+  }
+}

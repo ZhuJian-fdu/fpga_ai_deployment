@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-25",
+  "device": "cpu",
+  "python": "3.11.1",
+  "torch": "2.7.1+cpu",
+  "timm": "1.0.15",
+  "numpy": "1.26.4",
+  "attention": "explicit; fused attention disabled",
+  "strict_checkpoint_load": true,
+  "parameters": 21902619,
+  "patch_size_actual": 16,
+  "samples": 1000,
+  "split": "development",
+  "reserved_holdout_inference": false,
+  "masked_positions": 39,
+  "excluded_flat_positions": [
+    36,
+    37,
+    38
+  ],
+  "masked_pooled_rmse": 0.10265445121822812,
+  "masked_mae": 0.046269384246976235,
+  "masked_max_abs_error": 1.0066547989845276,
+  "batch_consistency": {
+    "passed": true,
+    "max_abs_difference": 2.2351741790771484e-07,
+    "rtol": 1e-05,
+    "atol": 1e-06
+  },
+  "elapsed_seconds_including_io": 8.34031630000004,
+  "dataset_manifest_sha256": "5a623423a7a025f2270db421b614c9e3588fd011c2e623de364ed417c6cbd2a8",
+  "checkpoint_sha256": "8c57b6f5b2bb93243c94d27af9a874fa800cc1c9237326ffaf835f9d610a6f42",
+  "output_sha256": "90944abcb98602f8b6ca0913c16e1bd7bed1df10df552cebdb6a4b6a43d318f8",
+  "scope": "FP32 software baseline only; not quantized or FPGA inference; units unconfirmed"
+}

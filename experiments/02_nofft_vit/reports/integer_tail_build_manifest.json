@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-25",
+  "tool": "Vivado 2023.2",
+  "part": "xc7a35tfgg484-2",
+  "physical_validation": "pending",
+  "scope": "head.4 integer dense -> GELU lookup -> head.7 integer dense; no DDR",
+  "timing_ns": {
+    "WNS": 5.717,
+    "WHS": 0.036,
+    "WPWS": 8.87
+  },
+  "resources": {
+    "LUT": 2292,
+    "registers": 727,
+    "BRAM_tiles": 50,
+    "DSP": 14
+  },
+  "drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": {
+      "DPIP-1": 2,
+      "DPOP-1": 8,
+      "DPOP-2": 14
+    }
+  },
+  "synthesis_memory_note": "Synth 8-5835: initial inference over BRAM capacity; tool remapped some memories to LUT RAM. Final utilization fits exactly 50 BRAM tiles.",
+  "files": {
+    "02_nofft_vit/scripts/prepare_integer_tail.py": {
+      "sha256": "7546e90e4e6b7c893fd2bea2b997c4057ce7f944aba98292683cc96d4a96518a",
+      "bytes": 8517
+    },
+    "02_nofft_vit/scripts/test_integer_tail.py": {
+      "sha256": "ec56cd84f46af180d2d76b949ebc5b3528cc4544f60ebba16a9d937108b36659",
+      "bytes": 2043
+    },
+    "02_nofft_vit/scripts/test_integer_tail_uart.py": {
+      "sha256": "50a34bad9260c3fb8064c5fb2cd88fda54a3f2f8d6254f113b17fc44d1ba88b3",
+      "bytes": 2844
+    },
+    "02_nofft_vit/scripts/build_integer_tail.tcl": {
+      "sha256": "1b6df600ecf4b20aac1ca30d81edefb82b160625c9e1d7734b156fd754b4e4bd",
+      "bytes": 3022
+    },
+    "02_nofft_vit/scripts/integer_math.py": {
+      "sha256": "b7e3b2a03ffe70ffb7277d791f5202b6555c0b429b260818bdb860aa939f149c",
+      "bytes": 1179
+    },
+    "02_nofft_vit/rtl/int16_dot_requant.v": {
+      "sha256": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d",
+      "bytes": 2950
+    },
+    "02_nofft_vit/rtl/integer_dense_engine.v": {
+      "sha256": "7d18444a1c614f48b92196a2b4c238c9e1f6066815be8db703fef4265d3643b6",
+      "bytes": 3463
+    },
+    "02_nofft_vit/rtl/integer_tail_engine.v": {
+      "sha256": "5bc6c7897c8f85a63a8117a36cc75bc234476255434fdfa814e3db9bb9d8caba",
+      "bytes": 3125
+    },
+    "02_nofft_vit/rtl/integer_tail_uart.v": {
+      "sha256": "9e449d02306893ad7cd06ede6af8fe543bb618d0017df6c6145b262e2ab46a16",
+      "bytes": 5438
+    },
+    "02_nofft_vit/board/acx720_v3_integer_tail_top.v": {
+      "sha256": "52d25da3f2f53e8b26e25bf3b4d581f95f391c706c62bfd662f6b08cadc49f39",
+      "bytes": 556
+    },
+    "02_nofft_vit/board/acx720_v3_integer_tail.xdc": {
+      "sha256": "e445e3490d8ae2bcdb81dcc2299c9d4c31ea3523d863c38d29c4030ea605972d",
+      "bytes": 799
+    },
+    "02_nofft_vit/software/tail_protocol.py": {
+      "sha256": "7f9054afb18c27913e0c7db33e5680d9041072a5e1d1a8630482530fb04ed13b",
+      "bytes": 1910
+    },
+    "02_nofft_vit/software/check_integer_tail_board.py": {
+      "sha256": "6bb9bedc50069ce4ca1956f98cea6dc9b1f17fe88b8d1b7097f201952c8f45e0",
+      "bytes": 3214
+    },
+    "02_nofft_vit/sim/tb_integer_tail_engine.sv": {
+      "sha256": "4927ec55f4a502e98666b8ed32c404ca6cbaa931171b1ce9a035d2b4e9ae4be1",
+      "bytes": 3171
+    },
+    "02_nofft_vit/sim/tb_integer_tail_uart.sv": {
+      "sha256": "fe70fff9d5a965da4057e64d9a6e640a5395f063d0133142ccdde2215b9caed1",
+      "bytes": 2632
+    },
+    "02_nofft_vit/reports/integer_tail_reference.json": {
+      "sha256": "ac56f294463a94c6dd1623c95c4703d6520da7945c72ae16fa7953bacdf5fdc2",
+      "bytes": 3089
+    },
+    "02_nofft_vit/reports/integer_tail_simulation.json": {
+      "sha256": "d3d584810541f0d9ed2ac2a62eee817ce6008debec2688ff36e4b7923aba69c0",
+      "bytes": 956
+    },
+    "02_nofft_vit/reports/integer_tail_uart_simulation.json": {
+      "sha256": "5de2b2fb4dd7920e6f42fc056e73f3bce2878b0cb6187755d9f348dc428f4783",
+      "bytes": 1094
+    },
+    "02_nofft_vit/build/integer_tail_build.log": {
+      "sha256": "4b523e494fe488be26adf879113f41e3f81db66be0c94417fd6c32b5217a0ab1",
+      "bytes": 130622
+    },
+    "02_nofft_vit/build/integer_tail/final_biases.mem": {
+      "sha256": "91989dadb0525421d6fcb8c71d61ef59708ba37c7a79061898a6c0733ddc8e9d",
+      "bytes": 588
+    },
+    "02_nofft_vit/build/integer_tail/final_multipliers.mem": {
+      "sha256": "e296b180df004901a14660531b782bed861d8e4bbb40a7c578e08584293a24cb",
+      "bytes": 420
+    },
+    "02_nofft_vit/build/integer_tail/final_shifts.mem": {
+      "sha256": "b8137f4343626b1df1cc1ae91e882ad8ef78e134b53706fa826507162172e2a7",
+      "bytes": 168
+    },
+    "02_nofft_vit/build/integer_tail/final_weights.mem": {
+      "sha256": "b09dd56a646aa2fd2ef4ec30a54abd92481c31175dca451ddbd451e789f2d3bf",
+      "bytes": 24192
+    },
+    "02_nofft_vit/build/integer_tail/gelu.mem": {
+      "sha256": "2ff1543adb211121d20bc1816e3e541855cf6e423bcb05ca70a3756ac9e024bb",
+      "bytes": 393216
+    },
+    "02_nofft_vit/build/integer_tail/pre_biases.mem": {
+      "sha256": "e5007fab5bc66651269f6f9808f6e9a03999aa371f28a4916a52f7e8e867d792",
+      "bytes": 1344
+    },
+    "02_nofft_vit/build/integer_tail/pre_multipliers.mem": {
+      "sha256": "bd8befb7202da5f4c3b0b836b78f79dd70acdfde387e7c7f5e9e3d4bdc384411",
+      "bytes": 960
+    },
+    "02_nofft_vit/build/integer_tail/pre_shifts.mem": {
+      "sha256": "f4ad624c6667950159c33bfd04ecea03422456bb0f025ae60ab052053294f87d",
+      "bytes": 384
+    },
+    "02_nofft_vit/build/integer_tail/pre_weights.mem": {
+      "sha256": "1f616d4766442c20102c8bb88c175d141f42c0cb77e07f408438891aaac97029",
+      "bytes": 110592
+    },
+    "02_nofft_vit/build/integer_tail/reference.npz": {
+      "sha256": "e307744b9f064c20074553db9c61d37332520fd8f2d71a8b8efe43ec6fca9740",
+      "bytes": 1504143
+    },
+    "02_nofft_vit/build/integer_tail_hw/acx720_v3_integer_tail.bit": {
+      "sha256": "84a5e5fef733823ea5dca9ccd8006bc472c123f4be51da17c8017947f9cce41b",
+      "bytes": 2192134
+    },
+    "02_nofft_vit/build/integer_tail_hw/timing_summary.rpt": {
+      "sha256": "836ede654006b34a8d7d98eb0be4237f48b3d6e97807b91c4ef2b0d73f4fb084",
+      "bytes": 25457
+    },
+    "02_nofft_vit/build/integer_tail_hw/utilization.rpt": {
+      "sha256": "fbee12cc2b5c2cbc60a8606369e39df92adb58d6100666a3b3daaf69ecea1c2b",
+      "bytes": 11296
+    },
+    "02_nofft_vit/build/integer_tail_hw/drc.rpt": {
+      "sha256": "454ba06d046b257c63b04241b40a0001185dd9c2a9081f7476527b7aaadc48c5",
+      "bytes": 17850
+    },
+    "02_nofft_vit/build/integer_tail_hw/cdc.rpt": {
+      "sha256": "090d5fdb14355d6cff18bcd2750e2ba1410099dabff6f881494d56cff576b49f",
+      "bytes": 1304
+    },
+    "02_nofft_vit/build/integer_tail_hw/methodology.rpt": {
+      "sha256": "87fa50962f3d5fc30690b66b092419affe655f08a4fc19ee9bbeebdbe65d3a6e",
+      "bytes": 4000
+    },
+    "02_nofft_vit/build/integer_tail_hw/check_timing.rpt": {
+      "sha256": "ea5133b99983401290f1a52bfbb9bfa5b10a2e8802d367f1aff0a98466570b2f",
+      "bytes": 3378
+    },
+    "02_nofft_vit/build/integer_tail_hw/integer_tail.runs/synth_1/runme.log": {
+      "sha256": "6dcd14525878ac44e6073e036fd88993ea0641faf2871d180d8e24866e249d0a",
+      "bytes": 64060
+    },
+    "02_nofft_vit/build/integer_tail_hw/integer_tail.runs/impl_1/runme.log": {
+      "sha256": "bb39172ef9a0a03c3f3027b7f98f6242b33d3ca3412545b42aa984ac82c34a79",
+      "bytes": 41050
+    },
+    "01_digits_linear/rtl/uart_rx.v": {
+      "sha256": "19773301f3ed6b8957055558a73bc0c58f80c5d1a49186b02e78c9b3e15ccfb1",
+      "bytes": 1832
+    },
+    "01_digits_linear/rtl/uart_tx.v": {
+      "sha256": "4d7d7b8791d6c255e9029c68b6692e36a685e6ad892485f426e631cf32ca2bbf",
+      "bytes": 1012
+    }
+  }
+}

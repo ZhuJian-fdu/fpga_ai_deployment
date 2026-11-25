@@ -12,6 +12,18 @@ __pycache__/
 # Vendor packages stay local; commit source links and our own board adaptation.
 **/board/vendor/
 
+# Experiment 02 archives code/evidence only; keep model-derived payloads local.
+experiments/02_nofft_vit/**/*.pth
+experiments/02_nofft_vit/**/*.pt
+experiments/02_nofft_vit/**/*.onnx
+experiments/02_nofft_vit/**/*.npy
+experiments/02_nofft_vit/**/*.npz
+experiments/02_nofft_vit/**/*.mem
+experiments/02_nofft_vit/**/*.zip
+experiments/02_nofft_vit/**/*.rar
+experiments/02_nofft_vit/**/*.7z
+experiments/02_nofft_vit/**/*.tar.gz
+
 # Vivado generated files (keep RTL, XDC and Tcl source)
 .Xil/
 *.jou

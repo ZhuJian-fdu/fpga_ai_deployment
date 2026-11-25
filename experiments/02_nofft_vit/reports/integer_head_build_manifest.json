@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-25",
+  "part": "xc7a35tfgg484-2",
+  "tool": "Vivado 2023.2",
+  "physical_validation": "pending",
+  "scope": "head.7 only, 16 stored vectors, 672 outputs",
+  "timing_ns": {
+    "WNS": 5.282,
+    "WHS": 0.13,
+    "WPWS": 9.5
+  },
+  "resources": {
+    "LUT": 851,
+    "registers": 229,
+    "BRAM_tiles": 6,
+    "DSP": 7
+  },
+  "drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "warnings": {
+      "DPIP-1": 2,
+      "DPOP-1": 4,
+      "DPOP-2": 7
+    }
+  },
+  "files": {
+    "scripts/integer_math.py": {
+      "bytes": 1179,
+      "sha256": "b7e3b2a03ffe70ffb7277d791f5202b6555c0b429b260818bdb860aa939f149c"
+    },
+    "scripts/prepare_integer_head.py": {
+      "bytes": 8001,
+      "sha256": "103009aeca2556999f57cb03ee354513581de0878313fedde0481eab2d30fc5b"
+    },
+    "scripts/test_integer_head.py": {
+      "bytes": 3261,
+      "sha256": "269312190777f02b2e9beaf1cea8770d2370592e680a7257c06f2bf7a6639b68"
+    },
+    "scripts/build_integer_head.tcl": {
+      "bytes": 2577,
+      "sha256": "244433179ada644876608fc354398c04a917de9e2c4a36ccd21931e09266101c"
+    },
+    "rtl/int16_dot_requant.v": {
+      "bytes": 2950,
+      "sha256": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d"
+    },
+    "rtl/integer_head_selftest.v": {
+      "bytes": 3709,
+      "sha256": "2980290e24bc31136c5470ca4fce08d4a2d86419417b43f6449eddcfa618fedb"
+    },
+    "board/acx720_v3_integer_head_top.v": {
+      "bytes": 607,
+      "sha256": "d0ee7a777c563e79cd4c768a6f4a382947284d4330bade1b8cee7c4c94b6bafd"
+    },
+    "board/acx720_v3_integer_head.xdc": {
+      "bytes": 539,
+      "sha256": "faa3e5f37b5f13b7916febc9547a18c94ae3b2cec5f333a592fd894d2148931b"
+    },
+    "build/integer_head/biases.mem": {
+      "bytes": 588,
+      "sha256": "91989dadb0525421d6fcb8c71d61ef59708ba37c7a79061898a6c0733ddc8e9d"
+    },
+    "build/integer_head/expected_acc.mem": {
+      "bytes": 9408,
+      "sha256": "3534b82bfc4c95867715aef38971d0dc8aeee058faa0659b208e83687f635cef"
+    },
+    "build/integer_head/expected_out.mem": {
+      "bytes": 4032,
+      "sha256": "816e0cbf5cd6eb1a585f53f80ab0f70c9d5bc59cd1e6e18d66a557bc6303ef66"
+    },
+    "build/integer_head/expected_sat.mem": {
+      "bytes": 2016,
+      "sha256": "cc13cff58ab518f0c357ae3f47a0a14b50000188ae287ca665924ee611f2016c"
+    },
+    "build/integer_head/inputs.mem": {
+      "bytes": 9216,
+      "sha256": "78a62cadabae44db08bf7e120b01aa66b99e51e0fa892eb998b1db17b81f96ec"
+    },
+    "build/integer_head/multipliers.mem": {
+      "bytes": 420,
+      "sha256": "e296b180df004901a14660531b782bed861d8e4bbb40a7c578e08584293a24cb"
+    },
+    "build/integer_head/shifts.mem": {
+      "bytes": 168,
+      "sha256": "b8137f4343626b1df1cc1ae91e882ad8ef78e134b53706fa826507162172e2a7"
+    },
+    "build/integer_head/weights.mem": {
+      "bytes": 24192,
+      "sha256": "b09dd56a646aa2fd2ef4ec30a54abd92481c31175dca451ddbd451e789f2d3bf"
+    },
+    "build/integer_head_hw/cdc.rpt": {
+      "bytes": 1304,
+      "sha256": "2cc5e2f34b4142994aececa87b01ddd608434d2f2899a45c2ae7005dae75a51a"
+    },
+    "build/integer_head_hw/check_timing.rpt": {
+      "bytes": 3358,
+      "sha256": "1590c0d82e10f0897ae4ea465ba59e5d249ddfd5db724f91006f77ffbe7119e9"
+    },
+    "build/integer_head_hw/drc.rpt": {
+      "bytes": 9561,
+      "sha256": "e0cacdaeb8127df5181e1e1fe8a582e4670c59f77e045a93f258f8f0973cfb6f"
+    },
+    "build/integer_head_hw/methodology.rpt": {
+      "bytes": 2649,
+      "sha256": "03fed3ef8279f362c87e8d192f2756f35f71f1034dc3f31dffe6a602097fc6aa"
+    },
+    "build/integer_head_hw/timing_summary.rpt": {
+      "bytes": 23416,
+      "sha256": "8af898a95c67046b2ba9262e512c20d9e3878e389870b6ec3dc38a25d362c9f0"
+    },
+    "build/integer_head_hw/utilization.rpt": {
+      "bytes": 10753,
+      "sha256": "a6e4918586c18f87b1c030fd517eae2d6b5d40e2e3be12ad123f29c40623a964"
+    },
+    "build/integer_head_hw/acx720_v3_integer_head.bit": {
+      "bytes": 2192134,
+      "sha256": "78d39f7f3aa513f24fb28dc4e609516af9c7bd24a5eab05a914381e4005995e2"
+    },
+    "reports/integer_head_reference.json": {
+      "bytes": 2665,
+      "sha256": "c5434d8df82cb77797cffd24c41c8061b65197b10cb845849b9659585edcf11a"
+    },
+    "reports/integer_head_simulation.json": {
+      "bytes": 676,
+      "sha256": "556e839313470547944c498f6742121d64060928cf164e076e79f0205934befd"
+    },
+    "build/vivado/integer_head_final_build.log": {
+      "bytes": 103231,
+      "sha256": "09a6312b9566a194ddb9cea70e54696f259d6b33ebf11f4f780565d89bbd8acf"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-25",
+  "scope": "head.4 integer Linear 192->96, full INT16 GELU table, head.7 integer Linear 96->42; earlier layers CPU Q/DQ",
+  "calibration_samples": 300,
+  "development_samples": 1000,
+  "holdout_used": false,
+  "input_scale": 3.4144889661891564e-05,
+  "pre_gelu_scale": 3.458425040196597e-05,
+  "gelu_output_scale": 1.9279470426844847e-05,
+  "output_scale": 2.2181399603382176e-05,
+  "pre_gelu_margin": 1.25,
+  "head4": {
+    "conservative_abs_bound": 206497949379,
+    "actual_abs_max": 5411414073,
+    "exact_ratio_code_mismatches": 0,
+    "exact_ratio_max_code_error": 0,
+    "saturations": 0
+  },
+  "head7": {
+    "conservative_abs_bound": 104658670571,
+    "actual_abs_max": 4288488239,
+    "exact_ratio_code_mismatches": 0,
+    "exact_ratio_max_code_error": 0,
+    "saturations": 0
+  },
+  "gelu_table_entries": 65536,
+  "gelu_table_code_mismatches_vs_torch_float64": 0,
+  "gelu_table_max_abs_error": 0.3558041317116316,
+  "pre_gelu_mac_max_abs_vs_qdq": 5.836344528775683e-07,
+  "rmse_vs_qdq": 1.2303279992315171e-05,
+  "max_abs_vs_qdq": 6.266443385309628e-05,
+  "rmse_vs_previous_integer_head": 1.3752192547874222e-05,
+  "masked_rmse_vs_fp32": 8.64291068692657e-05,
+  "masked_rmse_vs_labels": 0.1026577965455373,
+  "dataset_manifest_sha256": "5a623423a7a025f2270db421b614c9e3588fd011c2e623de364ed417c6cbd2a8",
+  "previous_reference_sha256": "0ddb814d35d01862c1f8c1960684cb596a42f4a738c432ff313a1825127b8917",
+  "hardware_status": "pending",
+  "files": {
+    "final_biases.mem": {
+      "sha256": "91989dadb0525421d6fcb8c71d61ef59708ba37c7a79061898a6c0733ddc8e9d",
+      "bytes": 588
+    },
+    "final_multipliers.mem": {
+      "sha256": "e296b180df004901a14660531b782bed861d8e4bbb40a7c578e08584293a24cb",
+      "bytes": 420
+    },
+    "final_shifts.mem": {
+      "sha256": "b8137f4343626b1df1cc1ae91e882ad8ef78e134b53706fa826507162172e2a7",
+      "bytes": 168
+    },
+    "final_weights.mem": {
+      "sha256": "b09dd56a646aa2fd2ef4ec30a54abd92481c31175dca451ddbd451e789f2d3bf",
+      "bytes": 24192
+    },
+    "gelu.mem": {
+      "sha256": "2ff1543adb211121d20bc1816e3e541855cf6e423bcb05ca70a3756ac9e024bb",
+      "bytes": 393216
+    },
+    "pre_biases.mem": {
+      "sha256": "e5007fab5bc66651269f6f9808f6e9a03999aa371f28a4916a52f7e8e867d792",
+      "bytes": 1344
+    },
+    "pre_multipliers.mem": {
+      "sha256": "bd8befb7202da5f4c3b0b836b78f79dd70acdfde387e7c7f5e9e3d4bdc384411",
+      "bytes": 960
+    },
+    "pre_shifts.mem": {
+      "sha256": "f4ad624c6667950159c33bfd04ecea03422456bb0f025ae60ab052053294f87d",
+      "bytes": 384
+    },
+    "pre_weights.mem": {
+      "sha256": "1f616d4766442c20102c8bb88c175d141f42c0cb77e07f408438891aaac97029",
+      "bytes": 110592
+    },
+    "reference.npz": {
+      "sha256": "e307744b9f064c20074553db9c61d37332520fd8f2d71a8b8efe43ec6fca9740",
+      "bytes": 1504143
+    }
+  },
+  "development_gelu_saturations": 0,
+  "gelu_table_clipped_addresses": 9601,
+  "gelu_table_max_abs_error_vs_clipped_function": 9.639672749695016e-06
+}

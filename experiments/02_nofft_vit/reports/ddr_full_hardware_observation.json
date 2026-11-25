@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-25",
+  "source": "user_report",
+  "user_message": "下载后按一下 S4 并松开，先是LED0闪烁、LED1常亮、LED2熄灭，一会儿后变成LED0常亮、LED1常亮、LED2熄灭",
+  "bitstream_sha256": "4a679810a0598a2d74f10b2271a867c27ac3db53b8f44b81c351e6c61d84b82b",
+  "states": [
+    {
+      "stage": "running",
+      "led0": "blinking",
+      "led1": "on",
+      "led2": "off"
+    },
+    {
+      "stage": "completed",
+      "led0": "on",
+      "led1": "on",
+      "led2": "off"
+    }
+  ],
+  "result": "two_pass_full_address_comparison_pass_user_reported",
+  "exact_duration_seconds": null,
+  "independent_telemetry": false,
+  "stress_and_bandwidth_validation": "not_done"
+}

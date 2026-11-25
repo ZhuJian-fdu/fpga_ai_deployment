@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-25",
+  "passed": true,
+  "scope": "Local Git upload preparation; no remote upload performed",
+  "repository_candidate_files_excluding_this_report": 165,
+  "repository_candidate_bytes_excluding_this_report": 687103,
+  "largest_candidate_bytes": 148789,
+  "unexpected_generated_or_large_files": [],
+  "common_credential_pattern_hits": [],
+  "credential_scan_limit": "Pattern scan only, not a security audit",
+  "missing_local_markdown_links": [],
+  "ignore_probes_passed": [
+    "experiments/02_nofft_vit/artifacts/acx720_v3_closeout_20261125.zip",
+    "experiments/02_nofft_vit/build/integer_tail/reference.npz",
+    "experiments/02_nofft_vit/build/integer_tail_hw/acx720_v3_integer_tail.bit",
+    "experiments/02_nofft_vit/board/vendor/archive_probe.rar",
+    "experiments/02_nofft_vit/model_best.pth"
+  ],
+  "existing_acceptance_and_final_build_hashes_verified": true,
+  "restore_check": {
+    "date": "2026-11-25",
+    "restored_files_verified": 71,
+    "source": "independent copied checkout plus local restore bundle",
+    "tests": [
+      {
+        "script": "test_integer_tail.py",
+        "passed": true,
+        "exit_code": 0
+      },
+      {
+        "script": "test_integer_tail_uart.py",
+        "passed": true,
+        "exit_code": 0
+      }
+    ],
+    "hardware_contacted": false,
+    "original_reports_unchanged": true
+  },
+  "git_diff_check_passed": true,
+  "commit_performed": false,
+  "push_performed": false
+}

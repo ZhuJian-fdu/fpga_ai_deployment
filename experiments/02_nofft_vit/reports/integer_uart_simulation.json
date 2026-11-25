@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-25",
+  "passed": true,
+  "transactions": 5,
+  "reply_bytes_compared": 1925,
+  "checks": [
+    "actual_serial_lines",
+    "runtime_input_replacement",
+    "CRC_reject",
+    "timeout_recovery",
+    "reset",
+    "host_decoder"
+  ],
+  "source_sha256": {
+    "02_nofft_vit\\rtl\\int16_dot_requant.v": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d",
+    "02_nofft_vit\\rtl\\integer_head_engine.v": "8624deab33825619eaa421e5de0395025c6f5271c4072cef6b749a79980ffb01",
+    "02_nofft_vit\\rtl\\integer_head_uart.v": "3fd9d63fbe9fe959b67ecb46dc344ca0dc193cb67cee9339ad003bb98f685e5f",
+    "01_digits_linear\\rtl\\uart_rx.v": "19773301f3ed6b8957055558a73bc0c58f80c5d1a49186b02e78c9b3e15ccfb1",
+    "01_digits_linear\\rtl\\uart_tx.v": "4d7d7b8791d6c255e9029c68b6692e36a685e6ad892485f426e631cf32ca2bbf",
+    "02_nofft_vit\\sim\\tb_integer_head_uart.sv": "c85d79f403c0c3d04e13760c2c78f06ebd89192433c055120a092e827113025a"
+  }
+}

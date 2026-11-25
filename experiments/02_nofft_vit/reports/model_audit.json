@@ -1,0 +1,1932 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "versions": {
+    "numpy": "1.26.4",
+    "onnx": "1.17.0",
+    "onnxruntime": "1.20.1"
+  },
+  "source_files": {
+    "FP32 ONNX 模型/nofft_b1.onnx": {
+      "bytes": 87759757,
+      "sha256": "7ce08f3a108365aff291be6397137d3d565eb79dc8ee8e7704021ab24ec034d0"
+    },
+    "五组对应的参考输出/pytorch_cpu/11_prediction.npz": {
+      "bytes": 1512,
+      "sha256": "4cfda7039f67cea119711083d96398eea7830f857c4715fc71e435b9d9756c63"
+    },
+    "五组对应的参考输出/pytorch_cpu/21_prediction.npz": {
+      "bytes": 1511,
+      "sha256": "7338752fa6888f9ba89e8d7dd9895c52ad8c36790c5d846dc90d8562b831b0a9"
+    },
+    "五组对应的参考输出/pytorch_cpu/24_prediction.npz": {
+      "bytes": 1510,
+      "sha256": "1c9985cd6fa3d30c3c4675344101d27c5a8f212665cc26f18267c0853e15c395"
+    },
+    "五组对应的参考输出/pytorch_cpu/26_prediction.npz": {
+      "bytes": 1510,
+      "sha256": "92b08144f2b7de89244337d0e5b7368250ca37bede8bd30f11fa110238fc59a9"
+    },
+    "五组对应的参考输出/pytorch_cpu/31_prediction.npz": {
+      "bytes": 1512,
+      "sha256": "314d35f14e2218464a53830fab8ac02af1b85a8d34a2b2337542dfd454d67eee"
+    },
+    "五组对应的参考输出/pytorch_cpu/metrics.csv": {
+      "bytes": 546,
+      "sha256": "18ce38288dae79cf6be882f9c9c1b43b831c90a992d711cee7e67e0a29179ef9"
+    },
+    "五组对应的参考输出/pytorch_cpu/summary.json": {
+      "bytes": 981,
+      "sha256": "85e1fb7640a754654d20e088a61baf2f0e09b6d6cf3ac8186cd87462b3c45731"
+    },
+    "五组测试输入/test-5-npz/11.npz": {
+      "bytes": 67172,
+      "sha256": "ff267de4dec00f3ff966900f09eca6455e653dbd06f37015257d9e7227712c3f"
+    },
+    "五组测试输入/test-5-npz/21.npz": {
+      "bytes": 65654,
+      "sha256": "b5fdab40540c4144ae432893596d52df2babf5dee764a121df9b68b959d00c03"
+    },
+    "五组测试输入/test-5-npz/24.npz": {
+      "bytes": 67830,
+      "sha256": "4140680c4b6ee6e87716bdc0ee476e1daf751c396a30f92c9c7891361de7eb09"
+    },
+    "五组测试输入/test-5-npz/26.npz": {
+      "bytes": 67171,
+      "sha256": "ec524e83ebccc6520c8f2569000761e4e2e7ac89fcf7d1c02d81a3ca52037bac"
+    },
+    "五组测试输入/test-5-npz/31.npz": {
+      "bytes": 65902,
+      "sha256": "0dcaa744215e0190f3faa8b05a154acd5b47286677c35ae532220c2fb29f2feb"
+    },
+    "原始 PyTorch 权重和源码/model_best.pth": {
+      "bytes": 87682625,
+      "sha256": "8c57b6f5b2bb93243c94d27af9a874fa800cc1c9237326ffaf835f9d610a6f42"
+    },
+    "原始 PyTorch 权重和源码/src/inference.py": {
+      "bytes": 8319,
+      "sha256": "5b92c8d25aa774a2b54af1bf04ef79780c0e0646c668978bfa6bc9e1d2069ffd"
+    },
+    "原始 PyTorch 权重和源码/src/models/psf_zernike_model_fcas_vit.py": {
+      "bytes": 8801,
+      "sha256": "6c4cb51dca6c8ec67c2e4a706b6c120776fe1a004ee73d4cd73da952dc623e83"
+    },
+    "原始 PyTorch 权重和源码/src/models/vit_model.py": {
+      "bytes": 4853,
+      "sha256": "7432b258db5731038b7c9e804cb0ac1d9526320bf9cc6ff3fd0d782f68252a49"
+    }
+  },
+  "checkpoint_hash_matches_supplied_summary": true,
+  "pytorch_parameter_count_from_supplied_summary": 21902619,
+  "onnx_checker": "PASS",
+  "ir_version": 7,
+  "baseline_graph_optimization": "ORT_DISABLE_ALL",
+  "comparison_tolerance_note": "rtol=1e-5, atol=1e-6 is a provisional FP32 cross-runtime diagnostic, not an approved FPGA quantization tolerance. Optimized execution is reported separately without loosening it.",
+  "opsets": {
+    "ai.onnx": 13
+  },
+  "inputs": [
+    {
+      "name": "images",
+      "shape": [
+        1,
+        5,
+        112,
+        112
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "coefficients",
+      "shape": [
+        1,
+        42
+      ]
+    }
+  ],
+  "operators": {
+    "Add": 141,
+    "AveragePool": 2,
+    "BatchNormalization": 1,
+    "Clip": 1,
+    "Concat": 4,
+    "Constant": 198,
+    "ConstantOfShape": 1,
+    "Conv": 9,
+    "Div": 41,
+    "Equal": 1,
+    "Erf": 15,
+    "Expand": 1,
+    "Gemm": 3,
+    "GlobalAveragePool": 1,
+    "MatMul": 72,
+    "MaxPool": 1,
+    "Mul": 74,
+    "Pow": 25,
+    "ReduceMax": 1,
+    "ReduceMean": 52,
+    "Relu": 2,
+    "Reshape": 25,
+    "Shape": 1,
+    "Sigmoid": 4,
+    "Slice": 4,
+    "Softmax": 12,
+    "Split": 12,
+    "Sqrt": 25,
+    "Squeeze": 36,
+    "Sub": 25,
+    "Transpose": 39,
+    "Where": 1
+  },
+  "initializers": [
+    {
+      "name": "stem_norm.weight",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "stem_norm.bias",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "stem_norm.running_mean",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "stem_norm.running_var",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "spatial_module.residual_scale",
+      "shape": [],
+      "dtype": "float32",
+      "elements": 1,
+      "bytes": 4
+    },
+    {
+      "name": "spatial_module.ca.conv_h.weight",
+      "shape": [
+        5,
+        8,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 40,
+      "bytes": 160
+    },
+    {
+      "name": "spatial_module.ca.conv_h.bias",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "spatial_module.ca.conv_w.weight",
+      "shape": [
+        5,
+        8,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 40,
+      "bytes": 160
+    },
+    {
+      "name": "spatial_module.ca.conv_w.bias",
+      "shape": [
+        5
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "spatial_module.cbam.channel_attention.mlp.0.weight",
+      "shape": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "spatial_module.cbam.channel_attention.mlp.2.weight",
+      "shape": [
+        5,
+        1,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 5,
+      "bytes": 20
+    },
+    {
+      "name": "spatial_module.cbam.spatial_attention.conv.weight",
+      "shape": [
+        1,
+        2,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "elements": 98,
+      "bytes": 392
+    },
+    {
+      "name": "backbone.cls_token",
+      "shape": [
+        1,
+        1,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.pos_embed",
+      "shape": [
+        1,
+        50,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 19200,
+      "bytes": 76800
+    },
+    {
+      "name": "backbone.patch_embed.proj.weight",
+      "shape": [
+        384,
+        5,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "elements": 491520,
+      "bytes": 1966080
+    },
+    {
+      "name": "backbone.patch_embed.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.0.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.0.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.0.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.1.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.1.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.1.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.2.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.2.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.2.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.3.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.3.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.3.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.4.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.4.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.4.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.5.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.5.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.5.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.6.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.6.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.6.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.7.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.7.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.7.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.8.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.8.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.8.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.9.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.9.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.9.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.10.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.10.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.10.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.norm1.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.norm1.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.attn.qkv.bias",
+      "shape": [
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 1152,
+      "bytes": 4608
+    },
+    {
+      "name": "backbone.blocks.11.attn.proj.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.norm2.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.norm2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.blocks.11.mlp.fc1.bias",
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 1536,
+      "bytes": 6144
+    },
+    {
+      "name": "backbone.blocks.11.mlp.fc2.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.fc_norm.weight",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "backbone.fc_norm.bias",
+      "shape": [
+        384
+      ],
+      "dtype": "float32",
+      "elements": 384,
+      "bytes": 1536
+    },
+    {
+      "name": "head.1.weight",
+      "shape": [
+        192,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 73728,
+      "bytes": 294912
+    },
+    {
+      "name": "head.1.bias",
+      "shape": [
+        192
+      ],
+      "dtype": "float32",
+      "elements": 192,
+      "bytes": 768
+    },
+    {
+      "name": "head.4.weight",
+      "shape": [
+        96,
+        192
+      ],
+      "dtype": "float32",
+      "elements": 18432,
+      "bytes": 73728
+    },
+    {
+      "name": "head.4.bias",
+      "shape": [
+        96
+      ],
+      "dtype": "float32",
+      "elements": 96,
+      "bytes": 384
+    },
+    {
+      "name": "head.7.weight",
+      "shape": [
+        42,
+        96
+      ],
+      "dtype": "float32",
+      "elements": 4032,
+      "bytes": 16128
+    },
+    {
+      "name": "head.7.bias",
+      "shape": [
+        42
+      ],
+      "dtype": "float32",
+      "elements": 42,
+      "bytes": 168
+    },
+    {
+      "name": "onnx::Conv_1329",
+      "shape": [
+        8,
+        5,
+        1,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 40,
+      "bytes": 160
+    },
+    {
+      "name": "onnx::Conv_1330",
+      "shape": [
+        8
+      ],
+      "dtype": "float32",
+      "elements": 8,
+      "bytes": 32
+    },
+    {
+      "name": "onnx::MatMul_1341",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1352",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1353",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1354",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1355",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1366",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1367",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1368",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1369",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1380",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1381",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1382",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1383",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1394",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1395",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1396",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1397",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1408",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1409",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1410",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1411",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1422",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1423",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1424",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1425",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1436",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1437",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1438",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1439",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1450",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1451",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1452",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1453",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1464",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1465",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1466",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1467",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1478",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1479",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1480",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1481",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1492",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1493",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1494",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1495",
+      "shape": [
+        384,
+        1152
+      ],
+      "dtype": "float32",
+      "elements": 442368,
+      "bytes": 1769472
+    },
+    {
+      "name": "onnx::MatMul_1506",
+      "shape": [
+        384,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 147456,
+      "bytes": 589824
+    },
+    {
+      "name": "onnx::MatMul_1507",
+      "shape": [
+        384,
+        1536
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    },
+    {
+      "name": "onnx::MatMul_1508",
+      "shape": [
+        1536,
+        384
+      ],
+      "dtype": "float32",
+      "elements": 589824,
+      "bytes": 2359296
+    }
+  ],
+  "initializer_bytes": 87610452,
+  "conv_matmul_gemm_macs": 1110151124,
+  "mac_nodes_unresolved": [],
+  "mac_note": "Shape-derived Conv/MatMul/Gemm MACs only; excludes other operators, memory/transfer overhead and FPGA scheduling.",
+  "cases": [
+    {
+      "sample": "11.npz",
+      "input_keys": [
+        "images",
+        "gt_a"
+      ],
+      "input_shape": [
+        5,
+        112,
+        112
+      ],
+      "input_dtype": "float32",
+      "input_min": 0.0,
+      "input_max": 1.0,
+      "channel_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "channel_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_max_abs": 4.023313522338867e-07,
+      "reference_rmse": 1.1129747434779347e-07,
+      "allclose_rtol1e-5_atol1e-6": true,
+      "optimized_reference_max_abs": 3.427267074584961e-07,
+      "optimized_allclose_same_tolerance": true,
+      "masked_mse_39": 0.003604942699894309
+    },
+    {
+      "sample": "21.npz",
+      "input_keys": [
+        "images",
+        "gt_a"
+      ],
+      "input_shape": [
+        5,
+        112,
+        112
+      ],
+      "input_dtype": "float32",
+      "input_min": 0.0,
+      "input_max": 1.0,
+      "channel_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "channel_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_max_abs": 3.5762786865234375e-07,
+      "reference_rmse": 1.1024395973890933e-07,
+      "allclose_rtol1e-5_atol1e-6": true,
+      "optimized_reference_max_abs": 3.5762786865234375e-07,
+      "optimized_allclose_same_tolerance": true,
+      "masked_mse_39": 0.0010833212872967124
+    },
+    {
+      "sample": "24.npz",
+      "input_keys": [
+        "images",
+        "gt_a"
+      ],
+      "input_shape": [
+        5,
+        112,
+        112
+      ],
+      "input_dtype": "float32",
+      "input_min": 0.0,
+      "input_max": 1.0,
+      "channel_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "channel_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_max_abs": 1.7881393432617188e-07,
+      "reference_rmse": 7.147638569904302e-08,
+      "allclose_rtol1e-5_atol1e-6": true,
+      "optimized_reference_max_abs": 2.8312206268310547e-07,
+      "optimized_allclose_same_tolerance": true,
+      "masked_mse_39": 0.004961388185620308
+    },
+    {
+      "sample": "26.npz",
+      "input_keys": [
+        "images",
+        "gt_a"
+      ],
+      "input_shape": [
+        5,
+        112,
+        112
+      ],
+      "input_dtype": "float32",
+      "input_min": 0.0,
+      "input_max": 1.0,
+      "channel_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "channel_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_max_abs": 1.6391277313232422e-07,
+      "reference_rmse": 6.985599299014211e-08,
+      "allclose_rtol1e-5_atol1e-6": true,
+      "optimized_reference_max_abs": 2.682209014892578e-07,
+      "optimized_allclose_same_tolerance": true,
+      "masked_mse_39": 0.002179657109081745
+    },
+    {
+      "sample": "31.npz",
+      "input_keys": [
+        "images",
+        "gt_a"
+      ],
+      "input_shape": [
+        5,
+        112,
+        112
+      ],
+      "input_dtype": "float32",
+      "input_min": 0.0,
+      "input_max": 1.0,
+      "channel_min": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "channel_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "reference_max_abs": 5.21540641784668e-07,
+      "reference_rmse": 1.1533129651297713e-07,
+      "allclose_rtol1e-5_atol1e-6": true,
+      "optimized_reference_max_abs": 2.0563602447509766e-06,
+      "optimized_allclose_same_tolerance": false,
+      "masked_mse_39": 0.005316982511430979
+    }
+  ],
+  "pooled_masked_rmse_39": 0.058559869865504405,
+  "all_reference_comparisons_pass": true,
+  "boundary": "ONNX CPU evaluation versus supplied PyTorch reference files. PyTorch was not independently rerun; no quantization or FPGA build has been performed."
+}

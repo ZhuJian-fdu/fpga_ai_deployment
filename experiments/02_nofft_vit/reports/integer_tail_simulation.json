@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-25",
+  "passed": true,
+  "selected_development_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    387,
+    331,
+    833,
+    945,
+    834,
+    49,
+    140,
+    268
+  ],
+  "intermediate_values": 1536,
+  "final_records": 672,
+  "checks": [
+    "pre_accumulators",
+    "pre_requant",
+    "GELU_codes",
+    "final_accumulators",
+    "final_requant",
+    "runtime_input_replacement",
+    "backpressure_stability",
+    "reset_abort_recovery"
+  ],
+  "source_sha256": {
+    "rtl/int16_dot_requant.v": "7f008fb9acc1cfeb6b2646b125726b4beda0abac9965d3c757d0fab3e05a220d",
+    "rtl/integer_dense_engine.v": "7d18444a1c614f48b92196a2b4c238c9e1f6066815be8db703fef4265d3643b6",
+    "rtl/integer_tail_engine.v": "5bc6c7897c8f85a63a8117a36cc75bc234476255434fdfa814e3db9bb9d8caba",
+    "sim/tb_integer_tail_engine.sv": "4927ec55f4a502e98666b8ed32c404ca6cbaa931171b1ce9a035d2b4e9ae4be1"
+  }
+}

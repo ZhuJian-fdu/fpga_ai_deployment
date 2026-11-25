@@ -1,0 +1,8 @@
+PASS: 124 directed/random dot products, input gaps, output backpressure, reset abort
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_int16_dot_requant.sv:48: $finish called at 406600000 (1ps)
+PASS: head selftest CASE=0 done=1 failed=0
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_integer_head_selftest.sv:21: $finish called at 1323970000 (1ps)
+PASS: head selftest CASE=1 done=0 failed=1
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_integer_head_selftest.sv:21: $finish called at 2100000 (1ps)
+PASS: head selftest CASE=2 done=1 failed=0
+F:\GitHubProjects\fpga_ai_deployment\experiments\02_nofft_vit\sim\tb_integer_head_selftest.sv:21: $finish called at 1329000000 (1ps)
